@@ -52,8 +52,7 @@ Bütün bölümler tema düzenleyicide sürükle-bırak ile sıralanabilir, ekle
 ## Diğer sayfalar
 Koleksiyon (filtreleme ve sıralama), arama, sepet, blog, blog yazısı, sayfa, iletişim formu, hakkımızda (`page.about`), 404, şifre sayfası, hediye kartı ve müşteri hesap sayfaları. Tüm metinler Türkçe (`locales/tr.default.json`).
 
-## Önerilen menüler
-- **Ana menü (`main-menu`):** Yeni gelenler · Amigurumi · Bebek & Çocuk · Hırka & Yelek · Ev & Dekor · Kişiye özel · Hakkımızda
-- **Alt menü (`footer`):** Hakkımızda · Kargo ve teslimat · İade koşulları · Gizlilik politikası · İletişim
+## Kategoriler ve menü
+Kategori yapısı, alt kategoriler ve önerilen menü [KATEGORILER.md](KATEGORILER.md) dosyasında.
 
 Tema, Shopify'ın resmi denetim aracı Theme Check ile 0 hata verecek şekilde doğrulandı.
