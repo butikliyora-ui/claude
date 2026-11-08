@@ -83,13 +83,13 @@
         "c3": {
           "type": "collection",
           "settings": {
-            "title": "Fiyonk Tokalar"
+            "title": "Salkım Tokalar"
           }
         },
         "c4": {
           "type": "collection",
           "settings": {
-            "title": "Çiçekli Tokalar"
+            "title": "Fiyonk & Kelebek"
           }
         },
         "c5": {
@@ -101,7 +101,7 @@
         "c6": {
           "type": "collection",
           "settings": {
-            "title": "İğnelikler"
+            "title": "İsimli Ürünler"
           }
         }
       },
@@ -291,13 +291,13 @@
         "p2": {
           "type": "point",
           "settings": {
-            "text": "Okul, doğum günü ve özel gün setleri"
+            "text": "İsimli emzik zinciri ve anahtarlık"
           }
         },
         "p3": {
           "type": "point",
           "settings": {
-            "text": "Amigurumi bebek ve iğnelik siparişi"
+            "text": "Doğum, bebek mevlidi ve okul için toplu sipariş"
           }
         }
       },
@@ -309,8 +309,8 @@
       "settings": {
         "anchor": "ozel-siparis",
         "eyebrow": "Kişiye özel",
-        "heading": "Aklındaki rengi birlikte örelim",
-        "text": "<p>Kombinine uygun bir renk mi arıyorsun, ya da sevdiğin birine özel bir amigurumi mi istiyorsun? Bize yaz, sana özel hazırlayalım.</p>",
+        "heading": "Sana özel, ismine özel",
+        "text": "<p>Kombinine uygun bir renk, bebeğinin ismiyle bir emzik zinciri ya da sevdiğin birine özel bir amigurumi... Bize yaz, birlikte tasarlayalım.</p>",
         "button_label": "WhatsApp'tan yaz",
         "whatsapp_text": "Merhaba, kişiye özel sipariş vermek istiyorum.",
         "show_instagram": true,
@@ -337,7 +337,7 @@
         "w3": {
           "type": "point",
           "settings": {
-            "text": "Toptan toka, aksesuar ve amigurumi oyuncak"
+            "text": "Toptan toka, aksesuar ve amigurumi oyuncak; toplu siparişlere özel fiyat"
           }
         }
       },
@@ -477,7 +477,21 @@
           "type": "question",
           "settings": {
             "question": "Konya içinde elden teslim var mı?",
-            "answer": "<p>Evet, Konya içi siparişlerde elden teslim seçeneğimiz var. Sipariş notuna ya da WhatsApp'tan yazman yeterli.</p>"
+            "answer": "<p>Evet, Konya içi siparişlerde elden teslim seçeneğimiz var. Türkiye'nin her yerine kargo ile de gönderiyoruz.</p>"
+          }
+        },
+        "q8": {
+          "type": "question",
+          "settings": {
+            "question": "İsimli ürün yaptırabilir miyim?",
+            "answer": "<p>Evet. Emzik zinciri ve anahtarlıklarda istediğin ismi harf boncuklarla hazırlıyoruz. İsmi sipariş notuna yazman yeterli.</p>"
+          }
+        },
+        "q9": {
+          "type": "question",
+          "settings": {
+            "question": "Salkım toka nedir?",
+            "answer": "<p>Uzun saçlar için tasarlanan, gül veya ayçiçeği başlı, saç boyunca sarkan örgü yapraklı tokalardır. Örgülü saçlarda ve özel günlerde çok güzel durur.</p>"
           }
         }
       },
@@ -486,6 +500,8 @@
         "q7",
         "q2",
         "q3",
+        "q8",
+        "q9",
         "q4",
         "q5",
         "q6"

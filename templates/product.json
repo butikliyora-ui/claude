@@ -35,8 +35,8 @@
             "show_quantity": true,
             "show_dynamic_checkout": true,
             "show_note": true,
-            "note_label": "Renk / özel isteğin",
-            "note_placeholder": "Örn: Bordo-beyaz kombin, inci boncuklu"
+            "note_label": "İsim / renk isteğin",
+            "note_placeholder": "Örn: İsim 'Defne', pembe-beyaz kombin"
           }
         },
         "wa": {

@@ -21,7 +21,7 @@
           <li>{% render 'product-card', product: product %}</li>
         {%- endfor -%}
       {%- else -%}
-        {%- assign ph_titles = 'Çikolatalı Çilek Toka,Kiraz Toka,Nakışlı Oval Toka,Örgü Fiyonk Toka,Puf Papatya Toka,İnci Boncuklu Toka,Amigurumi Kuzu,Fincan İğnelik' | split: ',' -%}
+        {%- assign ph_titles = 'Çikolatalı Çilek Toka,Kiraz Toka,Nakışlı Oval Toka,Örgü Fiyonk Toka,Puf Papatya Toka,İnci Boncuklu Toka,Gül Salkım Toka,İsimli Emzik Zinciri' | split: ',' -%}
         {%- assign ph_prices = '14900,12900,14900,16900,14900,12900,34900,89900' | split: ',' -%}
         {%- for i in (1..limit) -%}
           {%- assign idx = forloop.index0 | modulo: 8 -%}
