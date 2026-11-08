@@ -1,0 +1,406 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "layout": "split",
+        "height": "medium",
+        "overlay": 30,
+        "align": "left",
+        "eyebrow": "%100 el yapımı",
+        "heading": "Her ilmekte biraz sevgi var",
+        "text": "<p>Amigurumi oyuncaklardan bebek battaniyelerine, hırkalardan ev dekorasyonuna kadar her ürün tek tek, elde örülür. Sevdikleriniz için özel, yıllarca saklanacak hediyeler.</p>",
+        "button_label": "Koleksiyonu keşfet",
+        "button_link": "shopify://collections/all",
+        "button2_label": "Kişiye özel sipariş",
+        "trust_text": "Yüzlerce mutlu müşteri",
+        "sticker": "Sipariş üzerine örülür"
+      }
+    },
+    "trust": {
+      "type": "trust-bar",
+      "blocks": {
+        "t1": {
+          "type": "item",
+          "settings": {
+            "icon": "hand",
+            "title": "%100 El yapımı",
+            "text": "Her ürün tek tek örülür"
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "icon": "leaf",
+            "title": "Kaliteli iplik",
+            "text": "Bebek dostu, yumuşak"
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "icon": "gift",
+            "title": "Hediye paketi",
+            "text": "Özenle paketlenir"
+          }
+        },
+        "t4": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Güvenli ödeme",
+            "text": "Kredi kartı / havale"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "categories": {
+      "type": "collection-list",
+      "blocks": {
+        "c1": {
+          "type": "collection",
+          "settings": {
+            "title": "Amigurumi"
+          }
+        },
+        "c2": {
+          "type": "collection",
+          "settings": {
+            "title": "Bebek & Çocuk"
+          }
+        },
+        "c3": {
+          "type": "collection",
+          "settings": {
+            "title": "Hırka & Yelek"
+          }
+        },
+        "c4": {
+          "type": "collection",
+          "settings": {
+            "title": "Çanta"
+          }
+        },
+        "c5": {
+          "type": "collection",
+          "settings": {
+            "title": "Ev Dekorasyonu"
+          }
+        },
+        "c6": {
+          "type": "collection",
+          "settings": {
+            "title": "Aksesuar"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Kategoriler",
+        "heading": "Ne arıyorsun?",
+        "columns": "6",
+        "tinted": false,
+        "padding_top": 64,
+        "padding_bottom": 32
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "eyebrow": "Yeni ilmekler",
+        "heading": "Çok sevilenler",
+        "products_to_show": 8,
+        "columns": 4,
+        "show_view_all": true,
+        "tinted": false,
+        "padding_top": 48,
+        "padding_bottom": 72
+      }
+    },
+    "story": {
+      "type": "image-with-text",
+      "settings": {
+        "image_position": "left",
+        "badge": "Sevgiyle örüldü",
+        "eyebrow": "Hikayemiz",
+        "heading": "Bir yumak iplikle başlayan hikaye",
+        "text": "<p>Merhaba, ben İlknur. Yıllardır sevdiklerim için ördüğüm ürünler bir gün sizin de evinize konuk olsun istedim. Her parçayı kendi ellerimle, kullandığım ipliği tek tek seçerek, sabırla ve sevgiyle örüyorum.</p><p>Burada bulacağınız hiçbir ürün fabrikadan çıkmadı; hepsinin bir hikayesi, her ilmeğinde biraz emek var.</p>",
+        "signature": "— İlknur",
+        "button_label": "Hakkımızda",
+        "button_link": "/pages/hakkimizda",
+        "tinted": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "process": {
+      "type": "process-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "chat",
+            "title": "Siparişini ver",
+            "text": "Ürünü seç, renk ve isteklerini not olarak ekle."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "yarn",
+            "title": "İpliğini seçiyoruz",
+            "text": "Sana özel, yumuşak ve kaliteli ipliklerle başlıyoruz."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "hand",
+            "title": "İlmek ilmek örüyoruz",
+            "text": "Ürünün tamamen elde, özenle örülür."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "icon": "gift",
+            "title": "Paketleyip yolluyoruz",
+            "text": "Hediye paketinde, güvenle kapına gelir."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "İlmek ilmek",
+        "heading": "Siparişin nasıl hazırlanıyor?",
+        "padding_top": 80,
+        "padding_bottom": 48
+      }
+    },
+    "custom": {
+      "type": "custom-order",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "text": "İstediğin renk ve ölçü"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "text": "İsim ve harf işleme"
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "text": "Doğum, baby shower ve özel gün hediyeleri"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "eyebrow": "Kişiye özel",
+        "heading": "Hayalindeki ürünü birlikte örelim",
+        "text": "<p>İstediğin renkte, istediğin ölçüde, hatta bebeğinin ismiyle... Aklındaki modeli bize yaz, sana özel hazırlayalım.</p>",
+        "button_label": "WhatsApp'tan yaz",
+        "whatsapp_text": "Merhaba, kişiye özel sipariş vermek istiyorum.",
+        "show_instagram": true,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "reviews": {
+      "type": "testimonials",
+      "blocks": {
+        "r1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Kızımın doğumu için sipariş ettiğim amigurumi tavşan o kadar özenli ki, her detayı düşünülmüş. Emeğinize sağlık!",
+            "author": "Zeynep A.",
+            "product": "Amigurumi Tavşan",
+            "rating": 5
+          }
+        },
+        "r2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Battaniyenin yumuşaklığı ve renkleri harika. Hediye paketiyle geldi, çok şık duruyordu.",
+            "author": "Elif D.",
+            "product": "Bebek Battaniyesi",
+            "rating": 5
+          }
+        },
+        "r3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "İstediğim renkte özel ördürdüm, süreç boyunca fotoğraflarla bilgilendirildim. Kesinlikle tekrar alacağım.",
+            "author": "Merve Y.",
+            "product": "Kişiye özel sipariş",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "eyebrow": "Sizden gelenler",
+        "heading": "Mutlu müşterilerimiz",
+        "tinted": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "insta": {
+      "type": "instagram-gallery",
+      "blocks": {
+        "i1": {
+          "type": "post",
+          "settings": {}
+        },
+        "i2": {
+          "type": "post",
+          "settings": {}
+        },
+        "i3": {
+          "type": "post",
+          "settings": {}
+        },
+        "i4": {
+          "type": "post",
+          "settings": {}
+        },
+        "i5": {
+          "type": "post",
+          "settings": {}
+        },
+        "i6": {
+          "type": "post",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "handle": "@ilknurun.ilmeklerii",
+        "heading": "Instagram'da bizi takip et",
+        "button_label": "Takip et",
+        "padding_top": 80,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Siparişim ne kadar sürede hazırlanır?",
+            "answer": "<p>Ürünlerimiz sipariş üzerine elde örüldüğü için hazırlanma süresi ürüne göre genellikle 3–10 iş günüdür. Stokta olan ürünler 1–2 iş günü içinde kargoya verilir.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Farklı renk veya ölçü isteyebilir miyim?",
+            "answer": "<p>Elbette! Sipariş notuna isteğini yazabilir ya da WhatsApp'tan bize ulaşabilirsin. Kişiye özel siparişlerde renk ve ölçüyü birlikte belirliyoruz.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Ürünler bebekler için güvenli mi?",
+            "answer": "<p>Bebek ürünlerinde yumuşak, anti-alerjik bebek iplikleri kullanıyoruz. Amigurumilerde güvenlik gözleri sağlam şekilde sabitlenir; küçük bebekler için nakış göz tercih edebilirsin.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "Örgü ürünlerin bakımı nasıl yapılır?",
+            "answer": "<p>30 derecede elde veya hassas programda yıkanmasını, sıkmadan ve düz bir zeminde kurutulmasını öneriyoruz. Çamaşır suyu ve kurutma makinesi kullanılmamalıdır.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "Kargo ve iade koşulları nelerdir?",
+            "answer": "<p>Siparişler anlaşmalı kargo ile gönderilir. Kişiye özel hazırlanan ürünlerde iade kabul edilmemektedir; standart ürünlerde teslimattan itibaren 14 gün içinde iade hakkın vardır.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "eyebrow": "Merak edilenler",
+        "heading": "Sık sorulan sorular",
+        "text": "<p>Cevabını bulamadığın bir soru mu var? Bize WhatsApp veya Instagram'dan yazabilirsin.</p>",
+        "open_first": true,
+        "padding_top": 48,
+        "padding_bottom": 80
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "İlk siparişine özel indirim",
+        "text": "<p>Bültenimize katıl; yeni modelleri, kampanyaları ve örgü dünyasından haberleri ilk sen öğren.</p>",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "trust",
+    "categories",
+    "bestsellers",
+    "story",
+    "process",
+    "custom",
+    "reviews",
+    "insta",
+    "faq",
+    "newsletter"
+  ]
+}

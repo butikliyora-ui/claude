@@ -1,0 +1,78 @@
+{%- liquid
+  assign wa_number = settings.whatsapp_number | remove: '+' | remove: ' '
+  if section.settings.button_link != blank
+    assign cta_url = section.settings.button_link
+  elsif wa_number != blank
+    assign cta_url = 'https://wa.me/' | append: wa_number | append: '?text='
+    assign wa_text = section.settings.whatsapp_text | url_encode
+    assign cta_url = cta_url | append: wa_text
+  else
+    assign cta_url = settings.social_instagram
+  endif
+-%}
+<section id="custom-order" class="section custom-order" style="--pt: {{ section.settings.padding_top }}px; --pb: {{ section.settings.padding_bottom }}px;">
+  <div class="page-width">
+    <div class="custom-order__card knit-bg">
+      <div class="custom-order__content">
+        {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+        <h2 class="h2">{{ section.settings.heading }}</h2>
+        <div class="rte">{{ section.settings.text }}</div>
+        <ul class="custom-order__list" role="list">
+          {%- for block in section.blocks -%}
+            <li {{ block.shopify_attributes }}>{% render 'icon', name: 'check' %}{{ block.settings.text }}</li>
+          {%- endfor -%}
+        </ul>
+        <div class="custom-order__buttons">
+          <a href="{{ cta_url }}" class="btn btn--light" target="_blank" rel="noopener">
+            {%- if wa_number != blank and section.settings.button_link == blank -%}{% render 'icon', name: 'whatsapp' %}{%- endif -%}
+            {{ section.settings.button_label }}
+          </a>
+          {%- if settings.social_instagram != blank and section.settings.show_instagram -%}
+            <a href="{{ settings.social_instagram }}" class="btn btn--ghost-light" target="_blank" rel="noopener">{% render 'icon', name: 'instagram' %}{{ 'general.instagram_dm' | t }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="custom-order__art" aria-hidden="true">
+        <span class="custom-order__ball custom-order__ball--1">{% render 'icon', name: 'yarn' %}</span>
+        <span class="custom-order__ball custom-order__ball--2">{% render 'icon', name: 'yarn' %}</span>
+        <span class="custom-order__ball custom-order__ball--3">{% render 'icon', name: 'heart' %}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kişiye özel sipariş",
+  "class": "section-custom-order",
+  "max_blocks": 6,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Üst etiket", "default": "Kişiye özel" },
+    { "type": "text", "id": "heading", "label": "Başlık", "default": "Hayalindeki ürünü birlikte örelim" },
+    { "type": "richtext", "id": "text", "label": "Metin", "default": "<p>İstediğin renkte, istediğin ölçüde, hatta bebeğinin ismiyle... Aklındaki modeli bize yaz, sana özel hazırlayalım.</p>" },
+    { "type": "text", "id": "button_label", "label": "Buton metni", "default": "WhatsApp'tan yaz" },
+    { "type": "url", "id": "button_link", "label": "Buton bağlantısı", "info": "Boş bırakılırsa tema ayarlarındaki WhatsApp numarası kullanılır." },
+    { "type": "text", "id": "whatsapp_text", "label": "WhatsApp hazır mesajı", "default": "Merhaba, kişiye özel sipariş vermek istiyorum." },
+    { "type": "checkbox", "id": "show_instagram", "label": "Instagram DM butonunu göster", "default": true },
+    { "type": "range", "id": "padding_top", "label": "Üst boşluk", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 48 },
+    { "type": "range", "id": "padding_bottom", "label": "Alt boşluk", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 48 }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Madde",
+      "settings": [{ "type": "text", "id": "text", "label": "Metin", "default": "İstediğin renk ve ölçü" }]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kişiye özel sipariş",
+      "blocks": [
+        { "type": "point", "settings": { "text": "İstediğin renk ve ölçü" } },
+        { "type": "point", "settings": { "text": "İsim ve harf işleme" } },
+        { "type": "point", "settings": { "text": "Doğum, baby shower ve özel gün hediyeleri" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

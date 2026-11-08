@@ -1,0 +1,63 @@
+<section class="trust-bar section" style="--pt: {{ section.settings.padding_top }}px; --pb: {{ section.settings.padding_bottom }}px;">
+  <div class="page-width">
+    <ul class="trust-bar__list" role="list">
+      {%- for block in section.blocks -%}
+        <li class="trust-bar__item" {{ block.shopify_attributes }}>
+          <span class="trust-bar__icon">{% render 'icon', name: block.settings.icon %}</span>
+          <span>
+            <strong class="trust-bar__title">{{ block.settings.title }}</strong>
+            {%- if block.settings.text != blank -%}<span class="trust-bar__text">{{ block.settings.text }}</span>{%- endif -%}
+          </span>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Güven çubuğu",
+  "class": "section-trust-bar",
+  "max_blocks": 4,
+  "settings": [
+    { "type": "range", "id": "padding_top", "label": "Üst boşluk", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 28 },
+    { "type": "range", "id": "padding_bottom", "label": "Alt boşluk", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 28 }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Özellik",
+      "settings": [
+        {
+          "type": "select", "id": "icon", "label": "İkon", "default": "hand",
+          "options": [
+            { "value": "hand", "label": "El" },
+            { "value": "yarn", "label": "Yumak" },
+            { "value": "heart", "label": "Kalp" },
+            { "value": "gift", "label": "Hediye" },
+            { "value": "truck", "label": "Kargo" },
+            { "value": "shield", "label": "Güvenli ödeme" },
+            { "value": "leaf", "label": "Doğal" },
+            { "value": "sparkle", "label": "Parıltı" },
+            { "value": "chat", "label": "Mesaj" },
+            { "value": "box", "label": "Paket" }
+          ]
+        },
+        { "type": "text", "id": "title", "label": "Başlık", "default": "%100 El yapımı" },
+        { "type": "text", "id": "text", "label": "Metin", "default": "Her ürün tek tek örülür" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Güven çubuğu",
+      "blocks": [
+        { "type": "item", "settings": { "icon": "hand", "title": "%100 El yapımı", "text": "Her ürün tek tek örülür" } },
+        { "type": "item", "settings": { "icon": "leaf", "title": "Kaliteli iplik", "text": "Bebek dostu, yumuşak" } },
+        { "type": "item", "settings": { "icon": "gift", "title": "Hediye paketi", "text": "Özenle paketlenir" } },
+        { "type": "item", "settings": { "icon": "shield", "title": "Güvenli ödeme", "text": "Kredi kartı / havale" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

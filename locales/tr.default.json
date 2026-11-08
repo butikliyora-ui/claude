@@ -1,0 +1,205 @@
+{
+  "accessibility": {
+    "skip_to_content": "İçeriğe geç"
+  },
+  "general": {
+    "page": "Sayfa {{ page }}",
+    "home": "Ana sayfa",
+    "breadcrumbs": "Sayfa konumu",
+    "close": "Kapat",
+    "error": "Bir sorun oluştu, lütfen tekrar deneyin.",
+    "search": "Ara",
+    "search_placeholder": "Amigurumi, battaniye, hırka…",
+    "view_all": "Tümünü gör",
+    "pagination": "Sayfalar",
+    "previous": "Önceki sayfa",
+    "next": "Sonraki sayfa",
+    "rating": "5 üzerinden {{ rating }} puan",
+    "instagram_dm": "Instagram'dan yaz",
+    "instagram_post": "Instagram gönderisi",
+    "whatsapp_label": "WhatsApp ile yazın",
+    "whatsapp_short": "Bize yazın"
+  },
+  "header": {
+    "menu": "Menü",
+    "main_navigation": "Ana menü",
+    "view_all": "Tümünü gör"
+  },
+  "newsletter": {
+    "label": "E-posta adresin",
+    "button": "Abone ol",
+    "success": "Teşekkürler! Bültenimize kaydoldun."
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Sepete ekle",
+      "add_short": "Ekle",
+      "added": "Sepete eklendi",
+      "sold_out": "Tükendi",
+      "unavailable": "Bu seçenek mevcut değil",
+      "choose_options": "Seçenekler",
+      "price_from_html": "{{ price }}'den başlayan",
+      "regular_price": "Normal fiyat",
+      "taxes_included": "KDV dahildir.",
+      "prep_time": "Hazırlanma süresi",
+      "quantity": "Adet",
+      "quantity_decrease": "Adedi azalt",
+      "quantity_increase": "Adedi artır",
+      "share": "Paylaş:",
+      "zoom": "Görseli büyüt",
+      "media_label": "{{ index }}. görseli göster",
+      "whatsapp_message": "Merhaba, \"{{ title }}\" ürünü hakkında bilgi almak istiyorum: {{ url }}"
+    }
+  },
+  "collections": {
+    "product_count": {
+      "one": "{{ count }} ürün",
+      "other": "{{ count }} ürün"
+    },
+    "filter": "Filtrele",
+    "sort_by": "Sırala",
+    "from": "En az",
+    "to": "En çok",
+    "clear": "Filtreleri temizle",
+    "apply": "Uygula",
+    "empty": "Bu kriterlere uyan ürün bulunamadı."
+  },
+  "cart": {
+    "title": "Sepetim",
+    "summary": "Sipariş özeti",
+    "subtotal": "Ara toplam",
+    "taxes_shipping": "Kargo ve vergiler ödeme adımında hesaplanır.",
+    "checkout": "Güvenli ödemeye geç",
+    "update": "Sepeti güncelle",
+    "view_cart": "Sepete git",
+    "continue": "Alışverişe devam et",
+    "empty": "Sepetin şimdilik boş. Sevgiyle örülmüş ürünlerimize göz atmaya ne dersin?",
+    "remove": "Kaldır",
+    "note": "Sipariş notu",
+    "note_placeholder": "Renk tercihi, isim işleme, hediye notu…",
+    "shipping_remaining_html": "Ücretsiz kargo için <strong>{{ amount }}</strong> daha ekle",
+    "shipping_free": "Tebrikler! Kargon ücretsiz.",
+    "perk_handmade": "Sipariş üzerine elde örülür",
+    "perk_gift": "Ücretsiz hediye paketi",
+    "perk_secure": "256-bit SSL ile güvenli ödeme"
+  },
+  "search": {
+    "title": "Arama",
+    "results_count": {
+      "zero": "\"{{ terms }}\" için sonuç bulunamadı",
+      "one": "\"{{ terms }}\" için {{ count }} sonuç",
+      "other": "\"{{ terms }}\" için {{ count }} sonuç"
+    },
+    "no_results": "\"{{ terms }}\" için bir şey bulamadık. Farklı bir kelime dene.",
+    "types": {
+      "article": "Blog yazısı",
+      "page": "Sayfa",
+      "product": "Ürün"
+    }
+  },
+  "contact": {
+    "name": "Adın",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "message": "Mesajın",
+    "send": "Gönder",
+    "success": "Mesajın bize ulaştı, en kısa sürede dönüş yapacağız."
+  },
+  "not_found": {
+    "title": "Bu ilmek kaçmış!",
+    "text": "Aradığın sayfa bulunamadı. Belki taşınmış ya da hiç var olmamış olabilir."
+  },
+  "blog": {
+    "back": "Tüm yazılar"
+  },
+  "password": {
+    "owner": "Mağaza sahibi misin? Giriş yap",
+    "password": "Şifre",
+    "enter": "Giriş"
+  },
+  "gift_card": {
+    "title": "Hediye kartın",
+    "unavailable": "Bu hediye kartı artık geçerli değil.",
+    "initial": "Başlangıç değeri",
+    "expires": "Son kullanma",
+    "shop": "Alışverişe başla",
+    "print": "Yazdır"
+  },
+  "customer": {
+    "account": {
+      "title": "Hesabım",
+      "hello": "Merhaba {{ name }}",
+      "logout": "Çıkış yap",
+      "details": "Hesap bilgileri",
+      "back": "Hesabıma dön"
+    },
+    "login": {
+      "title": "Giriş yap",
+      "submit": "Giriş yap",
+      "forgot": "Şifreni mi unuttun?",
+      "guest": "Misafir olarak devam et"
+    },
+    "recover": {
+      "title": "Şifreni sıfırla",
+      "text": "Şifre sıfırlama bağlantısı için e-posta adresini yaz.",
+      "submit": "Gönder",
+      "success": "Şifre sıfırlama bağlantısını e-postana gönderdik."
+    },
+    "register": {
+      "title": "Hesap oluştur",
+      "submit": "Kaydol",
+      "marketing": "Yeni ürün ve kampanyalardan haberdar olmak istiyorum"
+    },
+    "activate": {
+      "title": "Hesabını etkinleştir",
+      "submit": "Hesabı etkinleştir",
+      "decline": "Daveti reddet"
+    },
+    "reset": {
+      "title": "Yeni şifre belirle",
+      "submit": "Şifreyi kaydet"
+    },
+    "fields": {
+      "email": "E-posta",
+      "password": "Şifre",
+      "password_confirm": "Şifre (tekrar)",
+      "first_name": "Ad",
+      "last_name": "Soyad",
+      "address1": "Adres",
+      "address2": "Daire, kat vb.",
+      "city": "İlçe / Şehir",
+      "zip": "Posta kodu",
+      "country": "Ülke",
+      "province": "İl",
+      "phone": "Telefon"
+    },
+    "orders": {
+      "title": "Siparişlerim",
+      "order": "Sipariş",
+      "date": "Tarih",
+      "status": "Durum",
+      "total": "Toplam",
+      "none": "Henüz bir siparişin yok.",
+      "product": "Ürün",
+      "quantity": "Adet",
+      "billing": "Fatura adresi",
+      "shipping": "Teslimat adresi",
+      "cancelled": "İptal edildi",
+      "track": "Kargo takibi"
+    },
+    "addresses": {
+      "title": "Adreslerim",
+      "default": "Varsayılan adres",
+      "edit": "Düzenle",
+      "save": "Kaydet",
+      "delete": "Sil",
+      "delete_confirm": "Bu adresi silmek istediğine emin misin?",
+      "add": "Yeni adres ekle",
+      "set_default": "Varsayılan adres yap",
+      "view": {
+        "one": "Adresleri gör ({{ count }})",
+        "other": "Adresleri gör ({{ count }})"
+      }
+    }
+  }
+}

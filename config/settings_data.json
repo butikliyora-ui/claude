@@ -1,0 +1,36 @@
+{
+  "current": "Default",
+  "presets": {
+    "Default": {
+      "color_background": "#FBF6EF",
+      "color_surface": "#F3E9DC",
+      "color_text": "#3A2E2A",
+      "color_muted": "#7D6C63",
+      "color_border": "#E7D9C8",
+      "color_accent": "#B5654A",
+      "color_accent_contrast": "#FFFFFF",
+      "color_secondary": "#88987A",
+      "color_rose": "#EBCFC4",
+      "color_sale": "#B8392B",
+      "type_header_font": "lora_n4",
+      "type_body_font": "nunito_sans_n4",
+      "heading_scale": 100,
+      "body_scale": 100,
+      "page_width": 1320,
+      "radius": 16,
+      "button_shape": "pill",
+      "show_knit_pattern": true,
+      "card_image_ratio": "portrait",
+      "card_show_secondary_image": true,
+      "card_show_quick_add": true,
+      "show_handmade_badge": true,
+      "handmade_badge_text": "El yapımı",
+      "cart_type": "drawer",
+      "cart_show_note": true,
+      "free_shipping_threshold": 750,
+      "whatsapp_message": "Merhaba, sitenizden yazıyorum. Bilgi almak istiyorum.",
+      "show_whatsapp_float": true,
+      "social_instagram": "https://www.instagram.com/ilknurun.ilmeklerii"
+    }
+  }
+}

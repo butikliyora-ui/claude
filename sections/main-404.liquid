@@ -1,0 +1,17 @@
+<section class="section" style="--pt: 96px; --pb: 96px;">
+  <div class="page-width page-width--narrow empty-state">
+    {% render 'icon', name: 'yarn' %}
+    <p class="eyebrow">404</p>
+    <h1 class="h1">{{ 'not_found.title' | t }}</h1>
+    <p>{{ 'not_found.text' | t }}</p>
+    <a href="{{ routes.all_products_collection_url }}" class="btn">{{ 'cart.continue' | t }}</a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "404 sayfası",
+  "class": "section-404",
+  "settings": []
+}
+{% endschema %}

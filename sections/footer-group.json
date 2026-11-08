@@ -1,0 +1,53 @@
+{
+  "type": "footer",
+  "name": "Alt bölüm",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand": {
+          "type": "brand",
+          "settings": {
+            "text": "<p>Her biri ilmek ilmek, sevgiyle örülen el yapımı ürünler. Bebeğinize, evinize ve sevdiklerinize özel.</p>"
+          }
+        },
+        "menu1": {
+          "type": "menu",
+          "settings": {
+            "heading": "Kurumsal",
+            "menu": "footer"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "heading": "Bize ulaşın",
+            "text": "<p>Siparişler ve özel istekler için hafta içi 09:00 – 19:00 arası yanıt veriyoruz.</p>"
+          }
+        },
+        "news": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Yeni ürünlerden haberdar ol",
+            "text": "Yeni modeller ve kampanyalar önce abonelerimize."
+          }
+        }
+      },
+      "block_order": [
+        "brand",
+        "menu1",
+        "contact",
+        "news"
+      ],
+      "settings": {
+        "bg": "#3A2E2A",
+        "fg": "#F3E9DC",
+        "copyright": "Tüm hakları saklıdır. Her ürün sevgiyle, elde örülmüştür.",
+        "show_payment_icons": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

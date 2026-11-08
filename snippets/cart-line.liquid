@@ -1,0 +1,50 @@
+{%- comment -%}
+  Parametreler: item, index (1'den başlar), compact (yan sepet için)
+{%- endcomment -%}
+<li class="cart-line" data-line="{{ index }}">
+  <a href="{{ item.url }}" class="cart-line__media">
+    {%- if item.image -%}
+      {{ item.image | image_url: width: 240 | image_tag: loading: 'lazy', alt: item.title }}
+    {%- else -%}
+      <span class="card__placeholder">{% render 'icon', name: 'yarn' %}</span>
+    {%- endif -%}
+  </a>
+  <div class="cart-line__info">
+    <a href="{{ item.url }}" class="cart-line__title">{{ item.product.title }}</a>
+    {%- unless item.product.has_only_default_variant -%}
+      <p class="cart-line__meta">{{ item.variant.title }}</p>
+    {%- endunless -%}
+    {%- for prop in item.properties -%}
+      {%- assign first_char = prop.first | slice: 0 -%}
+      {%- if prop.last != blank and first_char != '_' -%}
+        <p class="cart-line__meta">{{ prop.first }}: {{ prop.last }}</p>
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if item.selling_plan_allocation -%}
+      <p class="cart-line__meta">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+    {%- endif -%}
+    {%- for discount in item.line_level_discount_allocations -%}
+      <p class="cart-line__discount">{{ discount.discount_application.title }} (-{{ discount.amount | money }})</p>
+    {%- endfor -%}
+
+    <div class="cart-line__row">
+      <div class="qty qty--small" data-qty>
+        <button type="button" class="qty__btn" data-line-change="{{ index }}" data-qty-value="{{ item.quantity | minus: 1 }}" aria-label="{{ 'products.product.quantity_decrease' | t }}">{% render 'icon', name: 'minus' %}</button>
+        {%- if compact -%}
+          <span class="qty__value" aria-live="polite">{{ item.quantity }}</span>
+        {%- else -%}
+          <label for="Updates-{{ index }}" class="visually-hidden">{{ 'products.product.quantity' | t }}</label>
+          <input id="Updates-{{ index }}" class="qty__input" type="number" name="updates[]" value="{{ item.quantity }}" min="0" inputmode="numeric" data-line-input="{{ index }}">
+        {%- endif -%}
+        <button type="button" class="qty__btn" data-line-change="{{ index }}" data-qty-value="{{ item.quantity | plus: 1 }}" aria-label="{{ 'products.product.quantity_increase' | t }}">{% render 'icon', name: 'plus' %}</button>
+      </div>
+      <div class="cart-line__price">
+        {%- if item.original_line_price != item.final_line_price -%}
+          <s>{{ item.original_line_price | money }}</s>
+        {%- endif -%}
+        <span>{{ item.final_line_price | money }}</span>
+      </div>
+    </div>
+    <button type="button" class="cart-line__remove" data-line-change="{{ index }}" data-qty-value="0">{{ 'cart.remove' | t }}</button>
+  </div>
+</li>

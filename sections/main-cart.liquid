@@ -1,0 +1,62 @@
+<section class="section main-cart" style="--pt: 48px; --pb: 80px;" data-main-cart>
+  <div class="page-width">
+    <h1 class="h1 main-cart__title">{{ 'cart.title' | t }}</h1>
+
+    {%- if cart.item_count > 0 -%}
+      <form action="{{ routes.cart_url }}" method="post" id="CartForm" class="main-cart__grid">
+        <div class="main-cart__items">
+          {% render 'shipping-bar' %}
+          <ul class="main-cart__list" role="list">
+            {%- for item in cart.items -%}
+              {% render 'cart-line', item: item, index: forloop.index, compact: false %}
+            {%- endfor -%}
+          </ul>
+          <a href="{{ routes.all_products_collection_url }}" class="link-arrow">{{ 'cart.continue' | t }}{% render 'icon', name: 'arrow' %}</a>
+        </div>
+
+        <aside class="cart-summary">
+          <h2 class="h4">{{ 'cart.summary' | t }}</h2>
+          {%- for discount in cart.cart_level_discount_applications -%}
+            <p class="cart-summary__row cart-summary__row--discount"><span>{{ discount.title }}</span><span>-{{ discount.total_allocated_amount | money }}</span></p>
+          {%- endfor -%}
+          <p class="cart-summary__row cart-summary__total"><span>{{ 'cart.subtotal' | t }}</span><span>{{ cart.total_price | money }}</span></p>
+          <p class="cart-summary__note">{{ 'cart.taxes_shipping' | t }}</p>
+
+          {%- if settings.cart_show_note -%}
+            <div class="cart-summary__note-field">
+              <label for="CartNote">{{ 'cart.note' | t }}</label>
+              <textarea id="CartNote" name="note" rows="3" placeholder="{{ 'cart.note_placeholder' | t }}">{{ cart.note }}</textarea>
+            </div>
+          {%- endif -%}
+
+          <button type="submit" name="checkout" class="btn btn--full">{% render 'icon', name: 'shield' %}{{ 'cart.checkout' | t }}</button>
+          <button type="submit" name="update" class="btn btn--outline btn--full btn--small">{{ 'cart.update' | t }}</button>
+
+          {%- if additional_checkout_buttons -%}
+            <div class="cart-summary__dynamic">{{ content_for_additional_checkout_buttons }}</div>
+          {%- endif -%}
+
+          <ul class="cart-summary__perks" role="list">
+            <li>{% render 'icon', name: 'hand' %}{{ 'cart.perk_handmade' | t }}</li>
+            <li>{% render 'icon', name: 'gift' %}{{ 'cart.perk_gift' | t }}</li>
+            <li>{% render 'icon', name: 'shield' %}{{ 'cart.perk_secure' | t }}</li>
+          </ul>
+        </aside>
+      </form>
+    {%- else -%}
+      <div class="empty-state">
+        {% render 'icon', name: 'yarn' %}
+        <p>{{ 'cart.empty' | t }}</p>
+        <a href="{{ routes.all_products_collection_url }}" class="btn">{{ 'cart.continue' | t }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sepet",
+  "class": "section-main-cart",
+  "settings": []
+}
+{% endschema %}

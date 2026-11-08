@@ -1,0 +1,40 @@
+{%- comment -%}
+  Parametreler:
+  - product: ürün nesnesi
+  - use_variant: true ise seçili varyantın fiyatını gösterir
+  - placeholder_price: ürün yoksa gösterilecek örnek fiyat (kuruş cinsinden)
+{%- endcomment -%}
+{%- liquid
+  if product != blank
+    assign target = product
+    if use_variant
+      assign target = product.selected_or_first_available_variant
+    endif
+    assign price = target.price
+    assign compare_at = target.compare_at_price
+    assign on_sale = false
+    if compare_at > price
+      assign on_sale = true
+    endif
+  else
+    assign price = placeholder_price | default: 34900
+    assign on_sale = false
+  endif
+-%}
+<div class="price{% if on_sale %} price--sale{% endif %}" data-price>
+  {%- if product != blank and product.price_varies and use_variant != true -%}
+    {%- assign price_money = price | money -%}
+    <span class="price__current">{{ 'products.product.price_from_html' | t: price: price_money }}</span>
+  {%- else -%}
+    <span class="price__current">{{ price | money }}</span>
+  {%- endif -%}
+  {%- if on_sale -%}
+    <s class="price__compare"><span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>{{ compare_at | money }}</s>
+  {%- endif -%}
+  {%- if use_variant and product.selected_or_first_available_variant.unit_price_measurement -%}
+    {%- assign v = product.selected_or_first_available_variant -%}
+    <small class="price__unit">
+      {{- v.unit_price | money }}/{% if v.unit_price_measurement.reference_value != 1 %}{{ v.unit_price_measurement.reference_value }}{% endif %}{{ v.unit_price_measurement.reference_unit -}}
+    </small>
+  {%- endif -%}
+</div>

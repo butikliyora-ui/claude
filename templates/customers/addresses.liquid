@@ -1,0 +1,35 @@
+<div class="section account" style="--pt: 56px; --pb: 80px;">
+  <div class="page-width">
+    <a href="{{ routes.account_url }}" class="link-arrow link-arrow--back">{% render 'icon', name: 'arrow' %}{{ 'customer.account.back' | t }}</a>
+    <h1 class="h2">{{ 'customer.addresses.title' | t }}</h1>
+    {%- paginate customer.addresses by 10 -%}
+      <div class="account__grid">
+        {%- for address in customer.addresses -%}
+          <div class="account__card">
+            {%- if address == customer.default_address -%}<p class="eyebrow">{{ 'customer.addresses.default' | t }}</p>{%- endif -%}
+            {{ address | format_address }}
+            <details class="account__edit">
+              <summary class="btn btn--outline btn--small">{{ 'customer.addresses.edit' | t }}</summary>
+              {%- form 'customer_address', address, class: 'account__form' -%}
+                {% render 'address-fields', form: form, id: address.id %}
+                <button type="submit" class="btn btn--small">{{ 'customer.addresses.save' | t }}</button>
+              {%- endform -%}
+            </details>
+            <form method="post" action="{{ address.url }}" class="account__delete" onsubmit="return confirm({{ 'customer.addresses.delete_confirm' | t | json | escape }});">
+              <input type="hidden" name="_method" value="delete">
+              <button type="submit" class="cart-line__remove">{{ 'customer.addresses.delete' | t }}</button>
+            </form>
+          </div>
+        {%- endfor -%}
+        <div class="account__card">
+          <h2 class="h4">{{ 'customer.addresses.add' | t }}</h2>
+          {%- form 'customer_address', customer.new_address, class: 'account__form' -%}
+            {% render 'address-fields', form: form, id: 'new' %}
+            <button type="submit" class="btn btn--small">{{ 'customer.addresses.add' | t }}</button>
+          {%- endform -%}
+        </div>
+      </div>
+      {% render 'pagination', paginate: paginate %}
+    {%- endpaginate -%}
+  </div>
+</div>

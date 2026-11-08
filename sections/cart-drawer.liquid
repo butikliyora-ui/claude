@@ -1,0 +1,43 @@
+<div class="cart-drawer" data-cart-drawer aria-hidden="true">
+  <div class="cart-drawer__overlay" data-cart-close></div>
+  <div class="cart-drawer__panel" role="dialog" aria-modal="true" aria-label="{{ 'cart.title' | t }}" tabindex="-1">
+    <div class="cart-drawer__head">
+      <h2 class="h3">{{ 'cart.title' | t }} <span class="cart-drawer__count" data-cart-drawer-count>({{ cart.item_count }})</span></h2>
+      <button type="button" class="icon-btn" data-cart-close aria-label="{{ 'general.close' | t }}">{% render 'icon', name: 'close' %}</button>
+    </div>
+
+    {%- if cart.item_count > 0 -%}
+      {% render 'shipping-bar' %}
+      <ul class="cart-drawer__items" role="list">
+        {%- for item in cart.items -%}
+          {% render 'cart-line', item: item, index: forloop.index, compact: true %}
+        {%- endfor -%}
+      </ul>
+      <div class="cart-drawer__foot">
+        {%- for discount in cart.cart_level_discount_applications -%}
+          <p class="cart-summary__row cart-summary__row--discount"><span>{{ discount.title }}</span><span>-{{ discount.total_allocated_amount | money }}</span></p>
+        {%- endfor -%}
+        <p class="cart-summary__row cart-summary__total"><span>{{ 'cart.subtotal' | t }}</span><span>{{ cart.total_price | money }}</span></p>
+        <p class="cart-summary__note">{{ 'cart.taxes_shipping' | t }}</p>
+        <form action="{{ routes.cart_url }}" method="post">
+          <button type="submit" name="checkout" class="btn btn--full">{% render 'icon', name: 'shield' %}{{ 'cart.checkout' | t }}</button>
+        </form>
+        <a href="{{ routes.cart_url }}" class="cart-drawer__view">{{ 'cart.view_cart' | t }}</a>
+      </div>
+    {%- else -%}
+      <div class="empty-state empty-state--drawer">
+        {% render 'icon', name: 'yarn' %}
+        <p>{{ 'cart.empty' | t }}</p>
+        <a href="{{ routes.all_products_collection_url }}" class="btn">{{ 'cart.continue' | t }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Yan sepet",
+  "class": "section-cart-drawer",
+  "settings": []
+}
+{% endschema %}

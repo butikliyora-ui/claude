@@ -1,0 +1,34 @@
+{%- paginate blog.articles by 9 -%}
+  <section class="section main-blog" style="--pt: 56px; --pb: 80px;">
+    <div class="page-width">
+      <div class="section-head section-head--center"><div><h1 class="h1">{{ blog.title }}</h1></div></div>
+      <ul class="grid blog-grid" role="list" style="--cols: 3; --cols-mobile: 1;">
+        {%- for article in blog.articles -%}
+          <li>
+            <a href="{{ article.url }}" class="article-card">
+              <span class="article-card__media{% unless article.image %} card__media--ph-{{ forloop.index | modulo: 6 }}{% endunless %}">
+                {%- if article.image -%}
+                  {{ article.image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400, 600, 900', sizes: '(min-width: 990px) 33vw, 100vw', alt: article.title }}
+                {%- else -%}
+                  <span class="card__placeholder">{% render 'icon', name: 'yarn' %}</span>
+                {%- endif -%}
+              </span>
+              <small class="eyebrow">{{ article.published_at | time_tag: format: 'date' }}</small>
+              <h2 class="h4">{{ article.title }}</h2>
+              <p>{{ article.excerpt_or_content | strip_html | truncatewords: 22 }}</p>
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+      {% render 'pagination', paginate: paginate %}
+    </div>
+  </section>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "Blog",
+  "class": "section-main-blog",
+  "settings": []
+}
+{% endschema %}

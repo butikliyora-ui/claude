@@ -1,0 +1,43 @@
+{%- if section.blocks.size > 0 -%}
+  <div class="announcement" style="--ann-bg: {{ section.settings.bg }}; --ann-fg: {{ section.settings.fg }};" {{ section.shopify_attributes }}>
+    <div class="page-width announcement__inner" data-announcement data-speed="{{ section.settings.speed | times: 1000 }}">
+      {%- for block in section.blocks -%}
+        <p class="announcement__item{% if forloop.first %} is-active{% endif %}" {{ block.shopify_attributes }}>
+          {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
+          {{ block.settings.text }}
+          {%- if block.settings.link != blank -%}<span aria-hidden="true"> &rarr;</span></a>{%- endif -%}
+        </p>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Duyuru çubuğu",
+  "class": "section-announcement",
+  "enabled_on": { "groups": ["header"] },
+  "max_blocks": 6,
+  "settings": [
+    { "type": "color", "id": "bg", "label": "Arka plan", "default": "#3A2E2A" },
+    { "type": "color", "id": "fg", "label": "Metin", "default": "#FBF6EF" },
+    { "type": "range", "id": "speed", "label": "Değişme süresi", "min": 3, "max": 10, "step": 1, "unit": "sn", "default": 5 }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "Duyuru",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Metin", "default": "Tüm ürünler sipariş üzerine el emeğiyle örülür" },
+        { "type": "url", "id": "link", "label": "Bağlantı" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Duyuru çubuğu",
+      "blocks": [{ "type": "announcement" }]
+    }
+  ]
+}
+{% endschema %}

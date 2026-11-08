@@ -1,0 +1,56 @@
+{
+  "type": "header",
+  "name": "Üst bölüm",
+  "sections": {
+    "announcement": {
+      "type": "announcement-bar",
+      "blocks": {
+        "a1": {
+          "type": "announcement",
+          "settings": {
+            "text": "Tüm ürünler sipariş üzerine, el emeğiyle örülür",
+            "link": ""
+          }
+        },
+        "a2": {
+          "type": "announcement",
+          "settings": {
+            "text": "750 TL ve üzeri siparişlerde kargo ücretsiz",
+            "link": ""
+          }
+        },
+        "a3": {
+          "type": "announcement",
+          "settings": {
+            "text": "Kişiye özel siparişler için WhatsApp'tan yazın",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a1",
+        "a2",
+        "a3"
+      ],
+      "settings": {
+        "bg": "#3A2E2A",
+        "fg": "#FBF6EF",
+        "speed": 5
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_width": 150,
+        "tagline": "el emeği · göz nuru",
+        "logo_position": "left",
+        "menu": "main-menu",
+        "sticky": true
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}

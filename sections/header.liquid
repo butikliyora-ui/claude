@@ -1,0 +1,155 @@
+{%- liquid
+  assign menu = section.settings.menu
+  assign logo = section.settings.logo
+  assign logo_w = section.settings.logo_width
+  assign logo_style = 'max-width: ' | append: logo_w | append: 'px'
+-%}
+
+<header
+  class="site-header{% if section.settings.sticky %} site-header--sticky{% endif %} site-header--logo-{{ section.settings.logo_position }}"
+  data-header
+>
+  <div class="page-width site-header__inner">
+    <details class="mobile-menu" data-drawer-details>
+      <summary class="icon-btn mobile-menu__toggle" aria-label="{{ 'header.menu' | t }}">
+        {% render 'icon', name: 'menu' %}
+      </summary>
+      <div class="mobile-menu__overlay" data-drawer-close></div>
+      <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="{{ 'header.menu' | t }}">
+        <div class="mobile-menu__head">
+          <span class="mobile-menu__brand">{{ shop.name }}</span>
+          <button type="button" class="icon-btn" data-drawer-close aria-label="{{ 'general.close' | t }}">
+            {% render 'icon', name: 'close' %}
+          </button>
+        </div>
+        <nav class="mobile-menu__nav" aria-label="{{ 'header.menu' | t }}">
+          <ul role="list">
+            {%- for link in menu.links -%}
+              <li>
+                {%- if link.links.size > 0 -%}
+                  <details class="mobile-menu__sub">
+                    <summary>{{ link.title | escape }}{% render 'icon', name: 'chevron' %}</summary>
+                    <ul role="list">
+                      <li><a href="{{ link.url }}">{{ 'header.view_all' | t }}</a></li>
+                      {%- for child in link.links -%}
+                        <li><a href="{{ child.url }}"{% if child.current %} aria-current="page"{% endif %}>{{ child.title | escape }}</a></li>
+                      {%- endfor -%}
+                    </ul>
+                  </details>
+                {%- else -%}
+                  <a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title | escape }}</a>
+                {%- endif -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+        <div class="mobile-menu__foot">
+          {%- if shop.customer_accounts_enabled -%}
+            <a href="{{ routes.account_url }}" class="mobile-menu__account">
+              {% render 'icon', name: 'user' %}
+              {%- if customer -%}{{ 'customer.account.title' | t }}{%- else -%}{{ 'customer.login.title' | t }}{%- endif -%}
+            </a>
+          {%- endif -%}
+          {% render 'social-icons' %}
+        </div>
+      </div>
+    </details>
+
+    <a href="{{ routes.root_url }}" class="site-logo" aria-label="{{ shop.name }}">
+      {%- if logo != blank -%}
+        {{
+          logo
+          | image_url: width: 600
+          | image_tag:
+            class: 'site-logo__img',
+            widths: '150, 300, 450, 600',
+            sizes: '(min-width: 750px) 300px, 50vw',
+            loading: 'eager',
+            alt: shop.name,
+            style: logo_style
+        }}
+      {%- else -%}
+        <span class="site-logo__text">{{ shop.name }}</span>
+        {%- if section.settings.tagline != blank -%}
+          <span class="site-logo__tagline">{{ section.settings.tagline }}</span>
+        {%- endif -%}
+      {%- endif -%}
+    </a>
+
+    <nav class="main-nav" aria-label="{{ 'header.main_navigation' | t }}">
+      <ul class="main-nav__list" role="list">
+        {%- for link in menu.links -%}
+          <li class="main-nav__item{% if link.links.size > 0 %} has-dropdown{% endif %}">
+            <a href="{{ link.url }}" class="main-nav__link"{% if link.current or link.child_active %} aria-current="page"{% endif %}>
+              {{ link.title | escape }}
+              {%- if link.links.size > 0 %}{% render 'icon', name: 'chevron' %}{% endif -%}
+            </a>
+            {%- if link.links.size > 0 -%}
+              <ul class="main-nav__dropdown" role="list">
+                {%- for child in link.links -%}
+                  <li><a href="{{ child.url }}"{% if child.current %} aria-current="page"{% endif %}>{{ child.title | escape }}</a></li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+    <div class="header-icons">
+      <button type="button" class="icon-btn" data-search-open aria-label="{{ 'general.search' | t }}">
+        {% render 'icon', name: 'search' %}
+      </button>
+      {%- if shop.customer_accounts_enabled -%}
+        <a href="{{ routes.account_url }}" class="icon-btn header-icons__account" aria-label="{{ 'customer.account.title' | t }}">
+          {% render 'icon', name: 'user' %}
+        </a>
+      {%- endif -%}
+      <a href="{{ routes.cart_url }}" class="icon-btn cart-link" data-cart-open aria-label="{{ 'cart.title' | t }}">
+        {% render 'icon', name: 'cart' %}
+        <span class="cart-count" data-cart-count{% if cart.item_count == 0 %} hidden{% endif %}>{{ cart.item_count }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="search-panel" data-search-panel hidden>
+    <form action="{{ routes.search_url }}" method="get" role="search" class="page-width search-panel__form">
+      <label for="HeaderSearch-{{ section.id }}" class="visually-hidden">{{ 'general.search' | t }}</label>
+      {% render 'icon', name: 'search' %}
+      <input
+        id="HeaderSearch-{{ section.id }}"
+        type="search"
+        name="q"
+        value="{{ search.terms | escape }}"
+        placeholder="{{ 'general.search_placeholder' | t }}"
+        autocomplete="off"
+      >
+      <input type="hidden" name="options[prefix]" value="last">
+      <button type="button" class="icon-btn" data-search-close aria-label="{{ 'general.close' | t }}">
+        {% render 'icon', name: 'close' %}
+      </button>
+    </form>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Başlık",
+  "class": "section-header",
+  "enabled_on": { "groups": ["header"] },
+  "settings": [
+    { "type": "image_picker", "id": "logo", "label": "Logo" },
+    { "type": "range", "id": "logo_width", "label": "Logo genişliği", "min": 60, "max": 300, "step": 10, "unit": "px", "default": 150 },
+    { "type": "text", "id": "tagline", "label": "Logo altı slogan", "info": "Logo görseli yoksa mağaza adının altında görünür.", "default": "el emeği · göz nuru" },
+    {
+      "type": "select", "id": "logo_position", "label": "Masaüstünde logo konumu", "default": "left",
+      "options": [
+        { "value": "left", "label": "Solda" },
+        { "value": "center", "label": "Ortada" }
+      ]
+    },
+    { "type": "link_list", "id": "menu", "label": "Menü", "default": "main-menu" },
+    { "type": "checkbox", "id": "sticky", "label": "Sayfa kayarken üstte sabit kalsın", "default": true }
+  ]
+}
+{% endschema %}

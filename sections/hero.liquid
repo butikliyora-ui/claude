@@ -1,0 +1,113 @@
+{%- liquid
+  assign img = section.settings.image
+  assign img_mobile = section.settings.image_mobile | default: img
+-%}
+<section
+  class="hero hero--{{ section.settings.layout }} hero--h-{{ section.settings.height }}{% unless img %} hero--no-image{% endunless %}"
+  style="--hero-overlay: {{ section.settings.overlay | divided_by: 100.0 }};"
+>
+  {%- if section.settings.layout == 'full' -%}
+    <div class="hero__media">
+      {%- if img -%}
+        <picture>
+          {%- if section.settings.image_mobile -%}
+            <source media="(max-width: 749px)" srcset="{{ img_mobile | image_url: width: 750 }} 750w, {{ img_mobile | image_url: width: 1100 }} 1100w" sizes="100vw">
+          {%- endif -%}
+          {{ img | image_url: width: 2400 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '750, 1100, 1500, 1800, 2400', sizes: '100vw', alt: img.alt | default: section.settings.heading }}
+        </picture>
+      {%- else -%}
+        <div class="hero__fallback knit-bg"></div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="page-width hero__inner">
+    <div class="hero__content hero__content--{{ section.settings.align }}">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="eyebrow hero__eyebrow">{% render 'icon', name: 'sparkle' %}{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h1 class="hero__title">{{ section.settings.heading }}</h1>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="hero__text rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+      <div class="hero__buttons">
+        {%- if section.settings.button_label != blank -%}
+          <a href="{{ section.settings.button_link | default: routes.all_products_collection_url }}" class="btn">{{ section.settings.button_label }}{% render 'icon', name: 'arrow' %}</a>
+        {%- endif -%}
+        {%- if section.settings.button2_label != blank -%}
+          <a href="{{ section.settings.button2_link | default: '#custom-order' }}" class="btn btn--ghost">{{ section.settings.button2_label }}</a>
+        {%- endif -%}
+      </div>
+      {%- if section.settings.trust_text != blank -%}
+        <p class="hero__trust">
+          <span class="hero__stars" aria-hidden="true">{% render 'icon', name: 'star' %}{% render 'icon', name: 'star' %}{% render 'icon', name: 'star' %}{% render 'icon', name: 'star' %}{% render 'icon', name: 'star' %}</span>
+          {{ section.settings.trust_text }}
+        </p>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.layout == 'split' -%}
+      <div class="hero__visual">
+        {%- if img -%}
+          <div class="hero__frame">
+            {{ img | image_url: width: 1400 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '500, 750, 1000, 1400', sizes: '(min-width: 990px) 50vw, 100vw', alt: img.alt | default: section.settings.heading }}
+          </div>
+        {%- else -%}
+          <div class="hero__frame hero__frame--placeholder knit-bg">
+            <span class="hero__yarn">{% render 'icon', name: 'yarn' %}</span>
+          </div>
+        {%- endif -%}
+        {%- if section.settings.sticker != blank -%}
+          <div class="hero__sticker"><span>{{ section.settings.sticker }}</span></div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Karşılama (Hero)",
+  "class": "section-hero",
+  "settings": [
+    {
+      "type": "select", "id": "layout", "label": "Düzen", "default": "split",
+      "options": [
+        { "value": "split", "label": "Metin + görsel yan yana" },
+        { "value": "full", "label": "Tam ekran görsel" }
+      ]
+    },
+    { "type": "image_picker", "id": "image", "label": "Görsel" },
+    { "type": "image_picker", "id": "image_mobile", "label": "Mobil görsel (tam ekran düzen)" },
+    {
+      "type": "select", "id": "height", "label": "Yükseklik", "default": "medium",
+      "options": [
+        { "value": "small", "label": "Kısa" },
+        { "value": "medium", "label": "Orta" },
+        { "value": "large", "label": "Uzun" }
+      ]
+    },
+    { "type": "range", "id": "overlay", "label": "Görsel karartma (tam ekran)", "min": 0, "max": 80, "step": 5, "unit": "%", "default": 30 },
+    {
+      "type": "select", "id": "align", "label": "Metin hizası", "default": "left",
+      "options": [
+        { "value": "left", "label": "Sol" },
+        { "value": "center", "label": "Orta" }
+      ]
+    },
+    { "type": "header", "content": "İçerik" },
+    { "type": "text", "id": "eyebrow", "label": "Üst etiket", "default": "%100 el yapımı" },
+    { "type": "text", "id": "heading", "label": "Başlık", "default": "Her ilmekte biraz sevgi var" },
+    { "type": "richtext", "id": "text", "label": "Metin", "default": "<p>Amigurumi oyuncaklardan bebek battaniyelerine, hırkalardan ev dekorasyonuna kadar her ürün tek tek, elde örülür. Sevdikleriniz için özel, yıllarca saklanacak hediyeler.</p>" },
+    { "type": "text", "id": "button_label", "label": "1. buton metni", "default": "Koleksiyonu keşfet" },
+    { "type": "url", "id": "button_link", "label": "1. buton bağlantısı" },
+    { "type": "text", "id": "button2_label", "label": "2. buton metni", "default": "Kişiye özel sipariş" },
+    { "type": "url", "id": "button2_link", "label": "2. buton bağlantısı", "info": "Boş bırakılırsa sayfadaki Kişiye özel sipariş bölümüne kaydırır." },
+    { "type": "text", "id": "trust_text", "label": "Güven satırı", "default": "Yüzlerce mutlu müşteri" },
+    { "type": "text", "id": "sticker", "label": "Görsel üstü yuvarlak etiket", "default": "Sipariş üzerine örülür" }
+  ],
+  "presets": [{ "name": "Karşılama (Hero)" }]
+}
+{% endschema %}

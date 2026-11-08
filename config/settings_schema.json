@@ -1,0 +1,115 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "İlmek",
+    "theme_version": "1.0.0",
+    "theme_author": "İlknur'un İlmekleri",
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://help.shopify.com/"
+  },
+  {
+    "name": "Renkler",
+    "settings": [
+      { "type": "header", "content": "Temel renkler" },
+      { "type": "color", "id": "color_background", "label": "Sayfa arka planı", "default": "#FBF6EF" },
+      { "type": "color", "id": "color_surface", "label": "Kart / alan arka planı", "default": "#F3E9DC" },
+      { "type": "color", "id": "color_text", "label": "Metin", "default": "#3A2E2A" },
+      { "type": "color", "id": "color_muted", "label": "İkincil metin", "default": "#7D6C63" },
+      { "type": "color", "id": "color_border", "label": "Çizgi ve kenarlıklar", "default": "#E7D9C8" },
+      { "type": "header", "content": "Vurgu renkleri" },
+      { "type": "color", "id": "color_accent", "label": "Ana vurgu (butonlar)", "default": "#B5654A" },
+      { "type": "color", "id": "color_accent_contrast", "label": "Vurgu üzerindeki metin", "default": "#FFFFFF" },
+      { "type": "color", "id": "color_secondary", "label": "İkincil vurgu (adaçayı)", "default": "#88987A" },
+      { "type": "color", "id": "color_rose", "label": "Pudra (yumuşak alanlar)", "default": "#EBCFC4" },
+      { "type": "color", "id": "color_sale", "label": "İndirim etiketi", "default": "#B8392B" }
+    ]
+  },
+  {
+    "name": "Yazı tipleri",
+    "settings": [
+      { "type": "font_picker", "id": "type_header_font", "label": "Başlık yazı tipi", "default": "lora_n4" },
+      { "type": "font_picker", "id": "type_body_font", "label": "Gövde yazı tipi", "default": "nunito_sans_n4" },
+      {
+        "type": "range", "id": "heading_scale", "label": "Başlık boyutu", "min": 80, "max": 140, "step": 5, "unit": "%", "default": 100
+      },
+      {
+        "type": "range", "id": "body_scale", "label": "Gövde metni boyutu", "min": 90, "max": 120, "step": 5, "unit": "%", "default": 100
+      }
+    ]
+  },
+  {
+    "name": "Düzen",
+    "settings": [
+      { "type": "range", "id": "page_width", "label": "Sayfa genişliği", "min": 1000, "max": 1600, "step": 20, "unit": "px", "default": 1320 },
+      { "type": "range", "id": "radius", "label": "Köşe yuvarlaklığı", "min": 0, "max": 28, "step": 2, "unit": "px", "default": 16 },
+      {
+        "type": "select", "id": "button_shape", "label": "Buton şekli", "default": "pill",
+        "options": [
+          { "value": "pill", "label": "Hap (tam yuvarlak)" },
+          { "value": "rounded", "label": "Yuvarlak köşe" },
+          { "value": "square", "label": "Köşeli" }
+        ]
+      },
+      { "type": "checkbox", "id": "show_knit_pattern", "label": "Örgü dokusu desenini göster", "info": "Boş alanlarda ve vurgulu bölümlerde ince bir örgü dokusu kullanır.", "default": true }
+    ]
+  },
+  {
+    "name": "Ürün kartları",
+    "settings": [
+      {
+        "type": "select", "id": "card_image_ratio", "label": "Görsel oranı", "default": "portrait",
+        "options": [
+          { "value": "square", "label": "Kare" },
+          { "value": "portrait", "label": "Dikey (4:5)" },
+          { "value": "natural", "label": "Görselin kendi oranı" }
+        ]
+      },
+      { "type": "checkbox", "id": "card_show_secondary_image", "label": "Üzerine gelince ikinci görseli göster", "default": true },
+      { "type": "checkbox", "id": "card_show_quick_add", "label": "Hızlı sepete ekle butonu", "default": true },
+      { "type": "checkbox", "id": "show_handmade_badge", "label": "\"El yapımı\" rozetini göster", "default": true },
+      { "type": "text", "id": "handmade_badge_text", "label": "Rozet metni", "default": "El yapımı" }
+    ]
+  },
+  {
+    "name": "Sepet",
+    "settings": [
+      {
+        "type": "select", "id": "cart_type", "label": "Sepete ekleyince", "default": "drawer",
+        "options": [
+          { "value": "drawer", "label": "Yan sepet aç" },
+          { "value": "page", "label": "Sepet sayfasına git" }
+        ]
+      },
+      { "type": "checkbox", "id": "cart_show_note", "label": "Sipariş notu alanını göster", "info": "Müşteriler renk/isim gibi özel isteklerini yazabilir.", "default": true },
+      {
+        "type": "number", "id": "free_shipping_threshold", "label": "Ücretsiz kargo limiti",
+        "info": "Mağaza para birimi cinsinden. 0 yazarsanız ilerleme çubuğu gizlenir.", "default": 750
+      }
+    ]
+  },
+  {
+    "name": "İletişim ve WhatsApp",
+    "settings": [
+      { "type": "text", "id": "whatsapp_number", "label": "WhatsApp numarası", "info": "Ülke koduyla, boşluksuz. Örnek: 905551112233" },
+      { "type": "text", "id": "whatsapp_message", "label": "Hazır mesaj", "default": "Merhaba, sitenizden yazıyorum. Bilgi almak istiyorum." },
+      { "type": "checkbox", "id": "show_whatsapp_float", "label": "Sağ altta WhatsApp butonu göster", "default": true },
+      { "type": "text", "id": "contact_email", "label": "İletişim e-postası" }
+    ]
+  },
+  {
+    "name": "Sosyal medya",
+    "settings": [
+      { "type": "text", "id": "social_instagram", "label": "Instagram", "default": "https://www.instagram.com/ilknurun.ilmeklerii" },
+      { "type": "text", "id": "social_tiktok", "label": "TikTok" },
+      { "type": "text", "id": "social_facebook", "label": "Facebook" },
+      { "type": "text", "id": "social_pinterest", "label": "Pinterest" },
+      { "type": "text", "id": "social_youtube", "label": "YouTube" }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      { "type": "image_picker", "id": "favicon", "label": "Favicon görseli", "info": "32 x 32 px önerilir." }
+    ]
+  }
+]
