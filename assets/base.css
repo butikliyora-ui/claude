@@ -1058,3 +1058,12 @@ input:focus-visible + .pill { outline: 2px solid var(--c-accent); outline-offset
 .custom-order--dark .eyebrow { color: var(--c-rose); }
 .custom-order--dark .custom-order__ball { background: rgba(255,255,255,.08); color: var(--c-rose); }
 .custom-order--dark .custom-order__list .icon { background: var(--c-accent); }
+
+/* Marka rozeti (logo görseli yüklenmemişse) */
+.site-logo:has(.site-logo__badge) { flex-direction: row; gap: 12px; }
+.site-logo__badge { width: 52px; height: 52px; border-radius: 50%; box-shadow: 0 4px 14px rgba(var(--c-text-rgb), .18); }
+.site-logo__words { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+@media (max-width: 749px) { .site-logo__badge { width: 40px; height: 40px; } .site-logo:has(.site-logo__badge) { gap: 8px; } }
+.site-footer__brand { display: flex; align-items: center; gap: 14px; }
+.site-footer__badge { width: 56px; height: 56px; border-radius: 50%; }
+.password__badge { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 12px; box-shadow: 0 10px 30px rgba(var(--c-text-rgb), .2); }

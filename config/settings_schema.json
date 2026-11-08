@@ -11,9 +11,10 @@
     "name": "Renkler",
     "settings": [
       {
-        "type": "select", "id": "color_palette", "label": "Renk paleti", "default": "kraft",
+        "type": "select", "id": "color_palette", "label": "Renk paleti", "default": "bakir",
         "info": "Hazır paletlerden birini seç. Aşağıdaki renkleri kendin ayarlamak için 'Özel' seç.",
         "options": [
+          { "value": "bakir", "label": "Bakır (logo renkleri)" },
           { "value": "kraft", "label": "Kraft & Hasır" },
           { "value": "kiremit", "label": "Kiremit" },
           { "value": "bordo", "label": "Bordo" },
@@ -104,7 +105,7 @@
   {
     "name": "İletişim ve WhatsApp",
     "settings": [
-      { "type": "text", "id": "whatsapp_number", "label": "WhatsApp numarası", "info": "Ülke koduyla, boşluksuz. Örnek: 905551112233" },
+      { "type": "text", "id": "whatsapp_number", "label": "WhatsApp numarası", "info": "Ülke koduyla, boşluksuz. Örnek: 905551112233", "default": "905537731862" },
       { "type": "text", "id": "whatsapp_message", "label": "Hazır mesaj", "default": "Merhaba, sitenizden yazıyorum. Bilgi almak istiyorum." },
       { "type": "checkbox", "id": "show_whatsapp_float", "label": "Sağ altta WhatsApp butonu göster", "default": true },
       { "type": "text", "id": "contact_email", "label": "İletişim e-postası" }
