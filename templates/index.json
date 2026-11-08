@@ -8,9 +8,9 @@
         "overlay": 30,
         "align": "left",
         "eyebrow": "Örgü | Tasarım · El yapımı",
-        "heading": "Saçlarına ilmek ilmek renk kat",
-        "text": "<p>Çilekli, kirazlı, papatyalı, nakışlı... Her toka tek tek, elde örülür ve kartında çift olarak gelir. Yanında amigurumi bebekler, kuzucuklar ve sevimli iğnelikler.</p>",
-        "button_label": "Tokaları keşfet",
+        "heading": "İlmek ilmek tokalar, minik dostlar",
+        "text": "<p>Çilekli, kirazlı, papatyalı tokalardan kalp ve zürafa anahtarlıklara, amigurumi bebeklerden kadife peluşlara... Hepsi el emeği, göz nuru.</p>",
+        "button_label": "Koleksiyonu keşfet",
         "button_link": "shopify://collections/all",
         "button2_label": "Toptan sipariş",
         "button2_link": "#toptan",
@@ -220,8 +220,8 @@
         "image_position": "left",
         "badge": "Örgü | Tasarım",
         "eyebrow": "Hikayemiz",
-        "heading": "Bir yumak, bir tığ ve bolca sevgi",
-        "text": "<p>Merhaba, ben İlknur. Workshop'larda başlayan örgü tutkum bugün yüzlerce tokaya, amigurumi bebeklere ve sevimli iğneliklere dönüştü. Oğlum için ördüğüm Sonic'ten anneme hediye ettiğim iğneliğe kadar her parçada aynı özen var.</p><p>Tokalarımın her biri tek tek örülür; inciler ve nakışlar elde işlenir. Üretmenin verdiği hazzı seninle paylaşmak için buradayım.</p>",
+        "heading": "Bir tığ, bir yumak ve bolca sevgi",
+        "text": "<p>Merhaba, ben İlknur. Örgüye tokalarla başladım; çilekli, kirazlı, nakışlı yüzlerce toka ördükten sonra amigurumi bebeklere ve minik anahtarlıklara geçtim. Bugün tokalarımız Türkiye'nin dört bir yanında butiklerde, amigurumilerimiz ise çocukların ellerinde.</p><p>Her parça tek tek, elde örülür. Elemeği göz nuru dediğimiz şey tam olarak bu.</p>",
         "signature": "— İlknur",
         "button_label": "Hakkımızda",
         "button_link": "/pages/hakkimizda",
@@ -523,6 +523,19 @@
         "padding_top": 0,
         "padding_bottom": 80
       }
+    },
+    "amigurumi": {
+      "type": "featured-collection",
+      "settings": {
+        "eyebrow": "El emeği göz nuru",
+        "heading": "Amigurumi & Anahtarlık",
+        "products_to_show": 4,
+        "columns": 4,
+        "show_view_all": true,
+        "tinted": true,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
@@ -531,6 +544,7 @@
     "categories",
     "bestsellers",
     "colors",
+    "amigurumi",
     "story",
     "process",
     "custom",
