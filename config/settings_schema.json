@@ -11,7 +11,7 @@
     "name": "Renkler",
     "settings": [
       {
-        "type": "select", "id": "color_palette", "label": "Renk paleti", "default": "bakir",
+        "type": "select", "id": "color_palette", "label": "Renk paleti", "default": "pembe",
         "info": "Hazır paletlerden birini seç. Aşağıdaki renkleri kendin ayarlamak için 'Özel' seç.",
         "options": [
           { "value": "bakir", "label": "Bakır (logo renkleri)" },
