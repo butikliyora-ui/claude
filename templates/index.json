@@ -9,7 +9,7 @@
         "align": "left",
         "eyebrow": "El yapımı örgü tokalar & amigurumi",
         "heading": "Saçlarına ilmek ilmek renk kat",
-        "text": "<p>İnci boncuklu çiçeklerden puf papatyalara, fiyonklardan nakışlı oval tokalara... Her biri tek tek, elde örülür. Yanında amigurumi bebekler ve sevimli iğnelikler.</p>",
+        "text": "<p>Çilekli, kirazlı, papatyalı, nakışlı... Her toka tek tek, elde örülür ve kartında çift olarak gelir. Yanında amigurumi bebekler, kuzucuklar ve sevimli iğnelikler.</p>",
         "button_label": "Tokaları keşfet",
         "button_link": "shopify://collections/all",
         "button2_label": "Toptan sipariş",
@@ -34,7 +34,7 @@
           "settings": {
             "icon": "sparkle",
             "title": "Çift olarak",
-            "text": "Kraft kartta, hediyeye hazır"
+            "text": "Kartında, hediyeye hazır"
           }
         },
         "t3": {
@@ -71,31 +71,31 @@
         "c1": {
           "type": "collection",
           "settings": {
-            "title": "İnci Boncuklu"
+            "title": "Meyveli Tokalar"
           }
         },
         "c2": {
           "type": "collection",
           "settings": {
-            "title": "Fiyonk Tokalar"
+            "title": "Nakışlı Tokalar"
           }
         },
         "c3": {
           "type": "collection",
           "settings": {
-            "title": "Puf Papatya"
+            "title": "Fiyonk Tokalar"
           }
         },
         "c4": {
           "type": "collection",
           "settings": {
-            "title": "Nakışlı Tokalar"
+            "title": "Çiçekli Tokalar"
           }
         },
         "c5": {
           "type": "collection",
           "settings": {
-            "title": "Amigurumi Bebek"
+            "title": "Amigurumi"
           }
         },
         "c6": {
@@ -253,8 +253,8 @@
           "type": "step",
           "settings": {
             "icon": "gift",
-            "title": "Kraft karta diziyoruz",
-            "text": "Çift olarak, hediye vermeye hazır kraft kartlarda paketlenir."
+            "title": "Kartına diziyoruz",
+            "text": "Tokalar çift olarak, hediye vermeye ve rafa koymaya hazır kartlarda paketlenir."
           }
         },
         "s4": {
@@ -331,13 +331,13 @@
         "w2": {
           "type": "point",
           "settings": {
-            "text": "Kraft kartlı, raflara hazır paketleme"
+            "text": "Kartlı, raflara hazır paketleme"
           }
         },
         "w3": {
           "type": "point",
           "settings": {
-            "text": "Sezona özel renk ve model seçenekleri"
+            "text": "Toptan toka, aksesuar ve amigurumi oyuncak"
           }
         }
       },
@@ -350,7 +350,7 @@
         "anchor": "toptan",
         "eyebrow": "Toptan satış",
         "heading": "Mağazan için toptan toka",
-        "text": "<p>El yapımı tokalarımızı mağazanda satmak ister misin? Adet, model ve renk tercihlerini yaz, sana özel toptan fiyat teklifi hazırlayalım.</p>",
+        "text": "<p>El yapımı tokalarımızı ve amigurumilerimizi mağazanda satmak ister misin? Adet, model ve renk tercihlerini yaz, sana özel toptan fiyat teklifi hazırlayalım.</p>",
         "button_label": "Toptan teklif iste",
         "whatsapp_text": "Merhaba, toptan toka siparişi hakkında bilgi almak istiyorum.",
         "show_instagram": false,
@@ -442,7 +442,7 @@
           "type": "question",
           "settings": {
             "question": "Tokalar tek mi, çift mi geliyor?",
-            "answer": "<p>Tokalarımız kraft kart üzerinde çift olarak gönderilir. Ürün sayfasında aksi belirtilmedikçe fiyat bir çift içindir.</p>"
+            "answer": "<p>Tokalarımız kartında çift olarak gönderilir. Ürün sayfasında aksi belirtilmedikçe fiyat bir çift içindir.</p>"
           }
         },
         "q3": {
@@ -472,10 +472,18 @@
             "question": "Örgü tokaların bakımı nasıl yapılır?",
             "answer": "<p>Kirlendiğinde ılık suda, hafif sabunla elde yıkayıp düz bir zeminde kurutabilirsin. Metal kısmın paslanmaması için iyice kurumasını bekle.</p>"
           }
+        },
+        "q7": {
+          "type": "question",
+          "settings": {
+            "question": "Konya içinde elden teslim var mı?",
+            "answer": "<p>Evet, Konya içi siparişlerde elden teslim seçeneğimiz var. Sipariş notuna ya da WhatsApp'tan yazman yeterli.</p>"
+          }
         }
       },
       "block_order": [
         "q1",
+        "q7",
         "q2",
         "q3",
         "q4",
