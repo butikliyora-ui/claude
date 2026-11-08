@@ -1,5 +1,5 @@
 {%- if section.blocks.size > 0 -%}
-  <div class="announcement" style="--ann-bg: {{ section.settings.bg }}; --ann-fg: {{ section.settings.fg }};" {{ section.shopify_attributes }}>
+  <div class="announcement" {% unless section.settings.use_palette %}style="--ann-bg: {{ section.settings.bg }}; --ann-fg: {{ section.settings.fg }};"{% endunless %} {{ section.shopify_attributes }}>
     <div class="page-width announcement__inner" data-announcement data-speed="{{ section.settings.speed | times: 1000 }}">
       {%- for block in section.blocks -%}
         <p class="announcement__item{% if forloop.first %} is-active{% endif %}" {{ block.shopify_attributes }}>
@@ -19,6 +19,7 @@
   "enabled_on": { "groups": ["header"] },
   "max_blocks": 6,
   "settings": [
+    { "type": "checkbox", "id": "use_palette", "label": "Renk paletini kullan", "info": "Kapatırsan aşağıdaki renkler kullanılır.", "default": true },
     { "type": "color", "id": "bg", "label": "Arka plan", "default": "#3A2E2A" },
     { "type": "color", "id": "fg", "label": "Metin", "default": "#FBF6EF" },
     { "type": "range", "id": "speed", "label": "Değişme süresi", "min": 3, "max": 10, "step": 1, "unit": "sn", "default": 5 }

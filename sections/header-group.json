@@ -32,7 +32,8 @@
       "settings": {
         "bg": "#3A2E2A",
         "fg": "#FBF6EF",
-        "speed": 5
+        "speed": 5,
+        "use_palette": true
       }
     },
     "header": {

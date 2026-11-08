@@ -43,7 +43,8 @@
         "bg": "#3A2E2A",
         "fg": "#F3E9DC",
         "copyright": "Tüm hakları saklıdır. Her ürün sevgiyle, elde örülmüştür.",
-        "show_payment_icons": true
+        "show_payment_icons": true,
+        "use_palette": true
       }
     }
   },

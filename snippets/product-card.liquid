@@ -19,7 +19,7 @@
     assign on_sale = false
     if product.compare_at_price > product.price
       assign on_sale = true
-      assign discount = product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price
+      assign discount = product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | round
     endif
   -%}
   <div class="card{% if settings.card_show_secondary_image and second_image %} card--has-secondary{% endif %}">

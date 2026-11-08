@@ -189,7 +189,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 .icon-btn:hover { background: var(--c-surface); }
 
 /* ---------- Duyuru çubuğu ---------- */
-.announcement { background: var(--ann-bg); color: var(--ann-fg); font-size: 13px; letter-spacing: .03em; }
+.announcement { --ann-bg: var(--c-text); --ann-fg: var(--c-bg); background: var(--ann-bg); color: var(--ann-fg); font-size: 13px; letter-spacing: .03em; }
 .announcement__inner { position: relative; display: grid; min-height: 38px; align-items: center; text-align: center; }
 .announcement__item {
   grid-area: 1 / 1; margin: 0; padding: 8px 0;
@@ -615,7 +615,7 @@ details.is-open > .mobile-menu__panel, details.is-open > .facets__panel { transf
 .form-message ul { margin: 0; padding-left: 18px; }
 
 /* ---------- Alt bilgi ---------- */
-.site-footer { background: var(--f-bg); color: var(--f-fg); padding: 64px 0 24px; margin-top: 0; }
+.site-footer { --f-bg: var(--c-text); --f-fg: var(--c-surface); background: var(--f-bg); color: var(--f-fg); padding: 64px 0 24px; margin-top: 0; }
 .site-footer a:hover { color: #fff; }
 .site-footer__grid { display: grid; gap: 40px; grid-template-columns: 1fr; }
 @media (min-width: 750px) { .site-footer__grid { grid-template-columns: repeat(2, 1fr); } }

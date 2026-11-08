@@ -1,4 +1,4 @@
-<footer class="site-footer" style="--f-bg: {{ section.settings.bg }}; --f-fg: {{ section.settings.fg }};">
+<footer class="site-footer"{% unless section.settings.use_palette %} style="--f-bg: {{ section.settings.bg }}; --f-fg: {{ section.settings.fg }};"{% endunless %}>
   <div class="page-width">
     <div class="site-footer__grid">
       {%- for block in section.blocks -%}
@@ -74,6 +74,7 @@
   "enabled_on": { "groups": ["footer"] },
   "max_blocks": 5,
   "settings": [
+    { "type": "checkbox", "id": "use_palette", "label": "Renk paletini kullan", "info": "Kapatırsan aşağıdaki renkler kullanılır.", "default": true },
     { "type": "color", "id": "bg", "label": "Arka plan", "default": "#3A2E2A" },
     { "type": "color", "id": "fg", "label": "Metin", "default": "#F3E9DC" },
     { "type": "text", "id": "copyright", "label": "Telif metni", "default": "Tüm hakları saklıdır. Her ürün sevgiyle, elde örülmüştür." },
