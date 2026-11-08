@@ -9,7 +9,7 @@
         "align": "left",
         "eyebrow": "Örgü | Tasarım · El yapımı",
         "heading": "İlmek ilmek tokalar, minik dostlar",
-        "text": "<p>Çilekli, kirazlı, papatyalı tokalardan kalp ve zürafa anahtarlıklara, amigurumi bebeklerden kadife peluşlara... Hepsi el emeği, göz nuru.</p>",
+        "text": "<p>Çilekli, kirazlı, papatyalı tokalardan muhabbet kuşu ve sultan papağanı amigurumilere, kalp ve zürafa anahtarlıklardan el yapımı bebeklere... Hepsi el emeği, göz nuru.</p>",
         "button_label": "Koleksiyonu keşfet",
         "button_link": "shopify://collections/all",
         "button2_label": "Toptan sipariş",
@@ -95,13 +95,19 @@
         "c5": {
           "type": "collection",
           "settings": {
-            "title": "Amigurumi"
+            "title": "Amigurumi Kuşlar"
           }
         },
         "c6": {
           "type": "collection",
           "settings": {
             "title": "Anahtarlık & İsimli"
+          }
+        },
+        "c7": {
+          "type": "collection",
+          "settings": {
+            "title": "Amigurumi Bebekler"
           }
         }
       },
@@ -111,12 +117,13 @@
         "c3",
         "c4",
         "c5",
+        "c7",
         "c6"
       ],
       "settings": {
         "eyebrow": "Koleksiyonlar",
         "heading": "Ne arıyorsun?",
-        "columns": "6",
+        "columns": "4",
         "tinted": false,
         "padding_top": 64,
         "padding_bottom": 32
@@ -528,8 +535,8 @@
       "type": "featured-collection",
       "settings": {
         "eyebrow": "El emeği göz nuru",
-        "heading": "Amigurumi & Anahtarlık",
-        "products_to_show": 4,
+        "heading": "Amigurumi Kuşlar & Anahtarlıklar",
+        "products_to_show": 8,
         "columns": 4,
         "show_view_all": true,
         "tinted": true,
