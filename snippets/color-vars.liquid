@@ -1,0 +1,108 @@
+{%- comment -%}
+  Renk paletleri. Tema ayarlarında 'Renk paleti' = 'Özel' seçilirse aşağıdaki renk seçiciler kullanılır.
+{%- endcomment -%}
+{%- liquid
+  assign c_bg = settings.color_background
+  assign c_surface = settings.color_surface
+  assign c_text = settings.color_text
+  assign c_muted = settings.color_muted
+  assign c_border = settings.color_border
+  assign c_accent = settings.color_accent
+  assign c_on_accent = settings.color_accent_contrast
+  assign c_secondary = settings.color_secondary
+  assign c_rose = settings.color_rose
+  assign c_sale = settings.color_sale
+
+  case settings.color_palette
+    when 'kraft'
+      assign c_bg = '#FAF6EF'
+      assign c_surface = '#F0E5D4'
+      assign c_text = '#3B2F26'
+      assign c_muted = '#76665A'
+      assign c_border = '#E2D3BE'
+      assign c_accent = '#96693D'
+      assign c_secondary = '#7E8F5F'
+      assign c_rose = '#E8D6BC'
+      assign c_sale = '#B3362A'
+      assign c_on_accent = '#FFFFFF'
+    when 'kiremit'
+      assign c_bg = '#FBF6EF'
+      assign c_surface = '#F3E9DC'
+      assign c_text = '#3A2E2A'
+      assign c_muted = '#7A6A61'
+      assign c_border = '#E7D9C8'
+      assign c_accent = '#A95B41'
+      assign c_secondary = '#88987A'
+      assign c_rose = '#EBCFC4'
+      assign c_sale = '#B8392B'
+      assign c_on_accent = '#FFFFFF'
+    when 'bordo'
+      assign c_bg = '#FCF8F5'
+      assign c_surface = '#F4E7E2'
+      assign c_text = '#3A2326'
+      assign c_muted = '#7A6264'
+      assign c_border = '#EBD8D3'
+      assign c_accent = '#9E2430'
+      assign c_secondary = '#5C7E4C'
+      assign c_rose = '#F0D2D0'
+      assign c_sale = '#9E2430'
+      assign c_on_accent = '#FFFFFF'
+    when 'mavi'
+      assign c_bg = '#F8FAFC'
+      assign c_surface = '#E7EFF5'
+      assign c_text = '#24364A'
+      assign c_muted = '#5F7083'
+      assign c_border = '#D6E2EC'
+      assign c_accent = '#46739B'
+      assign c_secondary = '#D9A93E'
+      assign c_rose = '#D4E4F0'
+      assign c_sale = '#B8392B'
+      assign c_on_accent = '#FFFFFF'
+    when 'pembe'
+      assign c_bg = '#FFF9F9'
+      assign c_surface = '#F9E8EA'
+      assign c_text = '#45282F'
+      assign c_muted = '#806369'
+      assign c_border = '#F0D9DD'
+      assign c_accent = '#BE4A6E'
+      assign c_secondary = '#7C9F78'
+      assign c_rose = '#F5D6DD'
+      assign c_sale = '#B8392B'
+      assign c_on_accent = '#FFFFFF'
+    when 'papatya'
+      assign c_bg = '#FFFBF3'
+      assign c_surface = '#F6ECD3'
+      assign c_text = '#3D3220'
+      assign c_muted = '#76694F'
+      assign c_border = '#EADFC2'
+      assign c_accent = '#93640F'
+      assign c_secondary = '#5E7A3A'
+      assign c_rose = '#F2E1B4'
+      assign c_sale = '#B8392B'
+      assign c_on_accent = '#FFFFFF'
+    when 'lila'
+      assign c_bg = '#FBF9FD'
+      assign c_surface = '#EFE9F6'
+      assign c_text = '#2F2A3F'
+      assign c_muted = '#6B6480'
+      assign c_border = '#E2DAEE'
+      assign c_accent = '#7456A0'
+      assign c_secondary = '#5FA593'
+      assign c_rose = '#E3D9F2'
+      assign c_sale = '#B8392B'
+      assign c_on_accent = '#FFFFFF'
+  endcase
+-%}
+--c-bg: {{ c_bg }};
+--c-surface: {{ c_surface }};
+--c-text: {{ c_text }};
+--c-text-rgb: {{ c_text | color_extract: 'red' }}, {{ c_text | color_extract: 'green' }}, {{ c_text | color_extract: 'blue' }};
+--c-muted: {{ c_muted }};
+--c-border: {{ c_border }};
+--c-accent: {{ c_accent }};
+--c-accent-rgb: {{ c_accent | color_extract: 'red' }}, {{ c_accent | color_extract: 'green' }}, {{ c_accent | color_extract: 'blue' }};
+--c-accent-dark: {{ c_accent | color_darken: 8 }};
+--c-on-accent: {{ c_on_accent }};
+--c-secondary: {{ c_secondary }};
+--c-rose: {{ c_rose }};
+--c-sale: {{ c_sale }};

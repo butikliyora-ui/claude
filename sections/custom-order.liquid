@@ -10,7 +10,7 @@
     assign cta_url = settings.social_instagram
   endif
 -%}
-<section id="custom-order" class="section custom-order" style="--pt: {{ section.settings.padding_top }}px; --pb: {{ section.settings.padding_bottom }}px;">
+<section id="{{ section.settings.anchor | default: section.id | handle }}" class="section custom-order custom-order--{{ section.settings.style }}" style="--pt: {{ section.settings.padding_top }}px; --pb: {{ section.settings.padding_bottom }}px;">
   <div class="page-width">
     <div class="custom-order__card knit-bg">
       <div class="custom-order__content">
@@ -47,6 +47,14 @@
   "class": "section-custom-order",
   "max_blocks": 6,
   "settings": [
+    { "type": "text", "id": "anchor", "label": "Bağlantı adı (çapa)", "info": "Butonlardan bu bölüme '#ad' ile kaydırmak için. Örn. ozel-siparis", "default": "ozel-siparis" },
+    {
+      "type": "select", "id": "style", "label": "Stil", "default": "soft",
+      "options": [
+        { "value": "soft", "label": "Yumuşak (desenli)" },
+        { "value": "dark", "label": "Koyu" }
+      ]
+    },
     { "type": "text", "id": "eyebrow", "label": "Üst etiket", "default": "Kişiye özel" },
     { "type": "text", "id": "heading", "label": "Başlık", "default": "Hayalindeki ürünü birlikte örelim" },
     { "type": "richtext", "id": "text", "label": "Metin", "default": "<p>İstediğin renkte, istediğin ölçüde, hatta bebeğinin ismiyle... Aklındaki modeli bize yaz, sana özel hazırlayalım.</p>" },

@@ -8,22 +8,19 @@
         "a1": {
           "type": "announcement",
           "settings": {
-            "text": "Tüm ürünler sipariş üzerine, el emeğiyle örülür",
-            "link": ""
+            "text": "Tüm tokalar el emeğiyle, ilmek ilmek örülür"
           }
         },
         "a2": {
           "type": "announcement",
           "settings": {
-            "text": "750 TL ve üzeri siparişlerde kargo ücretsiz",
-            "link": ""
+            "text": "Toptan toka siparişleri için WhatsApp'tan yazın"
           }
         },
         "a3": {
           "type": "announcement",
           "settings": {
-            "text": "Kişiye özel siparişler için WhatsApp'tan yazın",
-            "link": ""
+            "text": "İstediğin renkte özel sipariş alıyoruz"
           }
         }
       },
@@ -42,7 +39,7 @@
       "type": "header",
       "settings": {
         "logo_width": 150,
-        "tagline": "el emeği · göz nuru",
+        "tagline": "örgü · toka · amigurumi",
         "logo_position": "left",
         "menu": "main-menu",
         "sticky": true

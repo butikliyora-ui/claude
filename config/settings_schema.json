@@ -10,7 +10,21 @@
   {
     "name": "Renkler",
     "settings": [
-      { "type": "header", "content": "Temel renkler" },
+      {
+        "type": "select", "id": "color_palette", "label": "Renk paleti", "default": "kraft",
+        "info": "Hazır paletlerden birini seç. Aşağıdaki renkleri kendin ayarlamak için 'Özel' seç.",
+        "options": [
+          { "value": "kraft", "label": "Kraft & Hasır" },
+          { "value": "kiremit", "label": "Kiremit" },
+          { "value": "bordo", "label": "Bordo" },
+          { "value": "mavi", "label": "Bebek Mavisi" },
+          { "value": "pembe", "label": "Pudra Pembe" },
+          { "value": "papatya", "label": "Puf Papatya (hardal)" },
+          { "value": "lila", "label": "Lila & Mint" },
+          { "value": "custom", "label": "Özel (aşağıdaki renkler)" }
+        ]
+      },
+      { "type": "header", "content": "Özel palet renkleri" },
       { "type": "color", "id": "color_background", "label": "Sayfa arka planı", "default": "#FBF6EF" },
       { "type": "color", "id": "color_surface", "label": "Kart / alan arka planı", "default": "#F3E9DC" },
       { "type": "color", "id": "color_text", "label": "Metin", "default": "#3A2E2A" },

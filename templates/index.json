@@ -7,14 +7,15 @@
         "height": "medium",
         "overlay": 30,
         "align": "left",
-        "eyebrow": "%100 el yapımı",
-        "heading": "Her ilmekte biraz sevgi var",
-        "text": "<p>Amigurumi oyuncaklardan bebek battaniyelerine, hırkalardan ev dekorasyonuna kadar her ürün tek tek, elde örülür. Sevdikleriniz için özel, yıllarca saklanacak hediyeler.</p>",
-        "button_label": "Koleksiyonu keşfet",
+        "eyebrow": "El yapımı örgü tokalar & amigurumi",
+        "heading": "Saçlarına ilmek ilmek renk kat",
+        "text": "<p>İnci boncuklu çiçeklerden puf papatyalara, fiyonklardan nakışlı oval tokalara... Her biri tek tek, elde örülür. Yanında amigurumi bebekler ve sevimli iğnelikler.</p>",
+        "button_label": "Tokaları keşfet",
         "button_link": "shopify://collections/all",
-        "button2_label": "Kişiye özel sipariş",
-        "trust_text": "Yüzlerce mutlu müşteri",
-        "sticker": "Sipariş üzerine örülür"
+        "button2_label": "Toptan sipariş",
+        "button2_link": "#toptan",
+        "trust_text": "Her gün yeni bir renk",
+        "sticker": "Her gün yeni renk"
       }
     },
     "trust": {
@@ -25,31 +26,31 @@
           "settings": {
             "icon": "hand",
             "title": "%100 El yapımı",
-            "text": "Her ürün tek tek örülür"
+            "text": "Her toka tek tek örülür"
           }
         },
         "t2": {
           "type": "item",
           "settings": {
-            "icon": "leaf",
-            "title": "Kaliteli iplik",
-            "text": "Bebek dostu, yumuşak"
+            "icon": "sparkle",
+            "title": "Çift olarak",
+            "text": "Kraft kartta, hediyeye hazır"
           }
         },
         "t3": {
           "type": "item",
           "settings": {
-            "icon": "gift",
-            "title": "Hediye paketi",
-            "text": "Özenle paketlenir"
+            "icon": "heart",
+            "title": "Özel renk",
+            "text": "İstediğin renkte örüyoruz"
           }
         },
         "t4": {
           "type": "item",
           "settings": {
-            "icon": "shield",
-            "title": "Güvenli ödeme",
-            "text": "Kredi kartı / havale"
+            "icon": "box",
+            "title": "Toptan satış",
+            "text": "Butik ve mağazalara"
           }
         }
       },
@@ -70,37 +71,37 @@
         "c1": {
           "type": "collection",
           "settings": {
-            "title": "Amigurumi"
+            "title": "İnci Boncuklu"
           }
         },
         "c2": {
           "type": "collection",
           "settings": {
-            "title": "Bebek & Çocuk"
+            "title": "Fiyonk Tokalar"
           }
         },
         "c3": {
           "type": "collection",
           "settings": {
-            "title": "Hırka & Yelek"
+            "title": "Puf Papatya"
           }
         },
         "c4": {
           "type": "collection",
           "settings": {
-            "title": "Çanta"
+            "title": "Nakışlı Tokalar"
           }
         },
         "c5": {
           "type": "collection",
           "settings": {
-            "title": "Ev Dekorasyonu"
+            "title": "Amigurumi Bebek"
           }
         },
         "c6": {
           "type": "collection",
           "settings": {
-            "title": "Aksesuar"
+            "title": "İğnelikler"
           }
         }
       },
@@ -113,7 +114,7 @@
         "c6"
       ],
       "settings": {
-        "eyebrow": "Kategoriler",
+        "eyebrow": "Koleksiyonlar",
         "heading": "Ne arıyorsun?",
         "columns": "6",
         "tinted": false,
@@ -125,27 +126,106 @@
       "type": "featured-collection",
       "settings": {
         "eyebrow": "Yeni ilmekler",
-        "heading": "Çok sevilenler",
+        "heading": "En sevilen tokalar",
         "products_to_show": 8,
         "columns": 4,
         "show_view_all": true,
         "tinted": false,
         "padding_top": 48,
-        "padding_bottom": 72
+        "padding_bottom": 64
+      }
+    },
+    "colors": {
+      "type": "color-shop",
+      "blocks": {
+        "k1": {
+          "type": "color",
+          "settings": {
+            "title": "Kırmızı",
+            "color": "#C8222C"
+          }
+        },
+        "k2": {
+          "type": "color",
+          "settings": {
+            "title": "Bordo",
+            "color": "#8E1C2A"
+          }
+        },
+        "k3": {
+          "type": "color",
+          "settings": {
+            "title": "Pembe",
+            "color": "#E77FA0"
+          }
+        },
+        "k4": {
+          "type": "color",
+          "settings": {
+            "title": "Mavi",
+            "color": "#8DB8DC"
+          }
+        },
+        "k5": {
+          "type": "color",
+          "settings": {
+            "title": "Kiremit",
+            "color": "#C2603E"
+          }
+        },
+        "k6": {
+          "type": "color",
+          "settings": {
+            "title": "Hardal",
+            "color": "#D59A2A"
+          }
+        },
+        "k7": {
+          "type": "color",
+          "settings": {
+            "title": "Lila",
+            "color": "#A88BD0"
+          }
+        },
+        "k8": {
+          "type": "color",
+          "settings": {
+            "title": "Beyaz",
+            "color": "#F7F4EE"
+          }
+        }
+      },
+      "block_order": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5",
+        "k6",
+        "k7",
+        "k8"
+      ],
+      "settings": {
+        "eyebrow": "Bugünün rengi ne?",
+        "heading": "Renge göre seç",
+        "text": "<p>Her güne bir renk bırakıyoruz. Favori rengini seç, o renkteki tüm tokaları gör.</p>",
+        "tinted": true,
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "story": {
       "type": "image-with-text",
       "settings": {
         "image_position": "left",
-        "badge": "Sevgiyle örüldü",
+        "badge": "Örgü & tasarım",
         "eyebrow": "Hikayemiz",
-        "heading": "Bir yumak iplikle başlayan hikaye",
-        "text": "<p>Merhaba, ben İlknur. Yıllardır sevdiklerim için ördüğüm ürünler bir gün sizin de evinize konuk olsun istedim. Her parçayı kendi ellerimle, kullandığım ipliği tek tek seçerek, sabırla ve sevgiyle örüyorum.</p><p>Burada bulacağınız hiçbir ürün fabrikadan çıkmadı; hepsinin bir hikayesi, her ilmeğinde biraz emek var.</p>",
+        "heading": "Bir yumak, bir tığ ve bolca sevgi",
+        "text": "<p>Merhaba, ben İlknur. Workshop'larda başlayan örgü tutkum bugün yüzlerce tokaya, amigurumi bebeklere ve sevimli iğneliklere dönüştü. Oğlum için ördüğüm Sonic'ten anneme hediye ettiğim iğneliğe kadar her parçada aynı özen var.</p><p>Tokalarımın her biri tek tek örülür; inciler ve nakışlar elde işlenir. Üretmenin verdiği hazzı seninle paylaşmak için buradayım.</p>",
         "signature": "— İlknur",
         "button_label": "Hakkımızda",
         "button_link": "/pages/hakkimizda",
-        "tinted": true,
+        "tinted": false,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -156,33 +236,33 @@
         "s1": {
           "type": "step",
           "settings": {
-            "icon": "chat",
-            "title": "Siparişini ver",
-            "text": "Ürünü seç, renk ve isteklerini not olarak ekle."
+            "icon": "heart",
+            "title": "Rengini seç",
+            "text": "Modeli ve rengi seç, istersen kendi renk kombinasyonunu not olarak yaz."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
-            "icon": "yarn",
-            "title": "İpliğini seçiyoruz",
-            "text": "Sana özel, yumuşak ve kaliteli ipliklerle başlıyoruz."
+            "icon": "hand",
+            "title": "İlmek ilmek örüyoruz",
+            "text": "Tokan tamamen elde, tek tek örülür; inci ve nakışlar elde işlenir."
           }
         },
         "s3": {
           "type": "step",
           "settings": {
-            "icon": "hand",
-            "title": "İlmek ilmek örüyoruz",
-            "text": "Ürünün tamamen elde, özenle örülür."
+            "icon": "gift",
+            "title": "Kraft karta diziyoruz",
+            "text": "Çift olarak, hediye vermeye hazır kraft kartlarda paketlenir."
           }
         },
         "s4": {
           "type": "step",
           "settings": {
-            "icon": "gift",
-            "title": "Paketleyip yolluyoruz",
-            "text": "Hediye paketinde, güvenle kapına gelir."
+            "icon": "truck",
+            "title": "Kapına gönderiyoruz",
+            "text": "Özenle paketlenip kargoya verilir."
           }
         }
       },
@@ -194,8 +274,8 @@
       ],
       "settings": {
         "eyebrow": "İlmek ilmek",
-        "heading": "Siparişin nasıl hazırlanıyor?",
-        "padding_top": 80,
+        "heading": "Tokan nasıl hazırlanıyor?",
+        "padding_top": 48,
         "padding_bottom": 48
       }
     },
@@ -205,19 +285,19 @@
         "p1": {
           "type": "point",
           "settings": {
-            "text": "İstediğin renk ve ölçü"
+            "text": "İstediğin renk ve renk kombinasyonu"
           }
         },
         "p2": {
           "type": "point",
           "settings": {
-            "text": "İsim ve harf işleme"
+            "text": "Okul, doğum günü ve özel gün setleri"
           }
         },
         "p3": {
           "type": "point",
           "settings": {
-            "text": "Doğum, baby shower ve özel gün hediyeleri"
+            "text": "Amigurumi bebek ve iğnelik siparişi"
           }
         }
       },
@@ -227,51 +307,74 @@
         "p3"
       ],
       "settings": {
+        "anchor": "ozel-siparis",
         "eyebrow": "Kişiye özel",
-        "heading": "Hayalindeki ürünü birlikte örelim",
-        "text": "<p>İstediğin renkte, istediğin ölçüde, hatta bebeğinin ismiyle... Aklındaki modeli bize yaz, sana özel hazırlayalım.</p>",
+        "heading": "Aklındaki rengi birlikte örelim",
+        "text": "<p>Kombinine uygun bir renk mi arıyorsun, ya da sevdiğin birine özel bir amigurumi mi istiyorsun? Bize yaz, sana özel hazırlayalım.</p>",
         "button_label": "WhatsApp'tan yaz",
         "whatsapp_text": "Merhaba, kişiye özel sipariş vermek istiyorum.",
         "show_instagram": true,
         "padding_top": 48,
-        "padding_bottom": 48
+        "padding_bottom": 24,
+        "style": "soft"
+      }
+    },
+    "wholesale": {
+      "type": "custom-order",
+      "blocks": {
+        "w1": {
+          "type": "point",
+          "settings": {
+            "text": "Butik, kırtasiye ve hediyelik eşya mağazalarına toptan fiyat"
+          }
+        },
+        "w2": {
+          "type": "point",
+          "settings": {
+            "text": "Kraft kartlı, raflara hazır paketleme"
+          }
+        },
+        "w3": {
+          "type": "point",
+          "settings": {
+            "text": "Sezona özel renk ve model seçenekleri"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3"
+      ],
+      "settings": {
+        "anchor": "toptan",
+        "eyebrow": "Toptan satış",
+        "heading": "Mağazan için toptan toka",
+        "text": "<p>El yapımı tokalarımızı mağazanda satmak ister misin? Adet, model ve renk tercihlerini yaz, sana özel toptan fiyat teklifi hazırlayalım.</p>",
+        "button_label": "Toptan teklif iste",
+        "whatsapp_text": "Merhaba, toptan toka siparişi hakkında bilgi almak istiyorum.",
+        "show_instagram": false,
+        "padding_top": 24,
+        "padding_bottom": 48,
+        "style": "dark"
       }
     },
     "reviews": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "r1": {
           "type": "testimonial",
           "settings": {
-            "quote": "Kızımın doğumu için sipariş ettiğim amigurumi tavşan o kadar özenli ki, her detayı düşünülmüş. Emeğinize sağlık!",
-            "author": "Zeynep A.",
-            "product": "Amigurumi Tavşan",
-            "rating": 5
-          }
-        },
-        "r2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Battaniyenin yumuşaklığı ve renkleri harika. Hediye paketiyle geldi, çok şık duruyordu.",
-            "author": "Elif D.",
-            "product": "Bebek Battaniyesi",
-            "rating": 5
-          }
-        },
-        "r3": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "İstediğim renkte özel ördürdüm, süreç boyunca fotoğraflarla bilgilendirildim. Kesinlikle tekrar alacağım.",
-            "author": "Merve Y.",
-            "product": "Kişiye özel sipariş",
+            "quote": "Buraya gerçek bir müşteri yorumu yaz (Instagram yorumları ya da DM'lerden).",
+            "author": "Müşteri adı",
+            "product": "Aldığı ürün",
             "rating": 5
           }
         }
       },
       "block_order": [
-        "r1",
-        "r2",
-        "r3"
+        "r1"
       ],
       "settings": {
         "eyebrow": "Sizden gelenler",
@@ -319,9 +422,9 @@
       ],
       "settings": {
         "handle": "@ilknurun.ilmeklerii",
-        "heading": "Instagram'da bizi takip et",
+        "heading": "Her gün yeni bir renk Instagram'da",
         "button_label": "Takip et",
-        "padding_top": 80,
+        "padding_top": 64,
         "padding_bottom": 48
       }
     },
@@ -332,35 +435,42 @@
           "type": "question",
           "settings": {
             "question": "Siparişim ne kadar sürede hazırlanır?",
-            "answer": "<p>Ürünlerimiz sipariş üzerine elde örüldüğü için hazırlanma süresi ürüne göre genellikle 3–10 iş günüdür. Stokta olan ürünler 1–2 iş günü içinde kargoya verilir.</p>"
+            "answer": "<p>Hazırda olan tokalar 1–2 iş günü içinde kargoya verilir. Özel renk ve model siparişleri ürüne göre birkaç gün içinde örülüp gönderilir.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "Farklı renk veya ölçü isteyebilir miyim?",
-            "answer": "<p>Elbette! Sipariş notuna isteğini yazabilir ya da WhatsApp'tan bize ulaşabilirsin. Kişiye özel siparişlerde renk ve ölçüyü birlikte belirliyoruz.</p>"
+            "question": "Tokalar tek mi, çift mi geliyor?",
+            "answer": "<p>Tokalarımız kraft kart üzerinde çift olarak gönderilir. Ürün sayfasında aksi belirtilmedikçe fiyat bir çift içindir.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "Ürünler bebekler için güvenli mi?",
-            "answer": "<p>Bebek ürünlerinde yumuşak, anti-alerjik bebek iplikleri kullanıyoruz. Amigurumilerde güvenlik gözleri sağlam şekilde sabitlenir; küçük bebekler için nakış göz tercih edebilirsin.</p>"
+            "question": "İstediğim renkte toka yaptırabilir miyim?",
+            "answer": "<p>Elbette! Sipariş notuna rengini yazabilir ya da WhatsApp/Instagram'dan bize ulaşabilirsin.</p>"
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "Örgü ürünlerin bakımı nasıl yapılır?",
-            "answer": "<p>30 derecede elde veya hassas programda yıkanmasını, sıkmadan ve düz bir zeminde kurutulmasını öneriyoruz. Çamaşır suyu ve kurutma makinesi kullanılmamalıdır.</p>"
+            "question": "Toptan satış yapıyor musunuz?",
+            "answer": "<p>Evet. Butik, kırtasiye ve hediyelik eşya mağazaları için toptan toka siparişi alıyoruz. Adet ve model bilgisiyle bize yaz, teklifimizi iletelim.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "Kargo ve iade koşulları nelerdir?",
-            "answer": "<p>Siparişler anlaşmalı kargo ile gönderilir. Kişiye özel hazırlanan ürünlerde iade kabul edilmemektedir; standart ürünlerde teslimattan itibaren 14 gün içinde iade hakkın vardır.</p>"
+            "question": "Tokalar küçük çocuklar için uygun mu?",
+            "answer": "<p>Tokalar ve amigurumilerde inci, boncuk ve göz gibi küçük parçalar bulunabilir. 3 yaş altı çocuklar için uygun değildir; küçük çocuklar yalnızca yetişkin gözetiminde kullanmalıdır.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "Örgü tokaların bakımı nasıl yapılır?",
+            "answer": "<p>Kirlendiğinde ılık suda, hafif sabunla elde yıkayıp düz bir zeminde kurutabilirsin. Metal kısmın paslanmaması için iyice kurumasını bekle.</p>"
           }
         }
       },
@@ -369,7 +479,8 @@
         "q2",
         "q3",
         "q4",
-        "q5"
+        "q5",
+        "q6"
       ],
       "settings": {
         "eyebrow": "Merak edilenler",
@@ -383,8 +494,8 @@
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "heading": "İlk siparişine özel indirim",
-        "text": "<p>Bültenimize katıl; yeni modelleri, kampanyaları ve örgü dünyasından haberleri ilk sen öğren.</p>",
+        "heading": "Yeni renkleri ilk sen gör",
+        "text": "<p>Bültenimize katıl; yeni modeller, günün renkleri ve kampanyalardan ilk sen haberdar ol.</p>",
         "padding_top": 0,
         "padding_bottom": 80
       }
@@ -395,9 +506,11 @@
     "trust",
     "categories",
     "bestsellers",
+    "colors",
     "story",
     "process",
     "custom",
+    "wholesale",
     "reviews",
     "insta",
     "faq",

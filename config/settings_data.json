@@ -30,7 +30,8 @@
       "free_shipping_threshold": 750,
       "whatsapp_message": "Merhaba, sitenizden yazıyorum. Bilgi almak istiyorum.",
       "show_whatsapp_float": true,
-      "social_instagram": "https://www.instagram.com/ilknurun.ilmeklerii"
+      "social_instagram": "https://www.instagram.com/ilknurun.ilmeklerii",
+      "color_palette": "kraft"
     }
   }
 }

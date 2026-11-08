@@ -1,0 +1,65 @@
+<section class="section color-shop{% if section.settings.tinted %} section--tinted{% endif %}" style="--pt: {{ section.settings.padding_top }}px; --pb: {{ section.settings.padding_bottom }}px;">
+  <div class="page-width">
+    <div class="section-head section-head--center">
+      <div>
+        {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+        <h2 class="h2">{{ section.settings.heading }}</h2>
+        {%- if section.settings.text != blank -%}<div class="section-head__text rte">{{ section.settings.text }}</div>{%- endif -%}
+      </div>
+    </div>
+    <ul class="color-shop__list" role="list">
+      {%- for block in section.blocks -%}
+        <li {{ block.shopify_attributes }}>
+          <a href="{{ block.settings.link | default: routes.all_products_collection_url }}" class="color-shop__item">
+            <span class="color-shop__dot" style="--dot: {{ block.settings.color }};">
+              <span class="color-shop__stitch" aria-hidden="true"></span>
+            </span>
+            <span class="color-shop__name">{{ block.settings.title }}</span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Renge göre seç",
+  "class": "section-color-shop",
+  "max_blocks": 12,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Üst etiket", "default": "Bugünün rengi ne?" },
+    { "type": "text", "id": "heading", "label": "Başlık", "default": "Renge göre seç" },
+    { "type": "richtext", "id": "text", "label": "Metin", "default": "<p>Her güne bir renk bırakıyoruz. Favori rengini seç, o renkteki tüm tokaları gör.</p>" },
+    { "type": "checkbox", "id": "tinted", "label": "Renkli arka plan", "default": false },
+    { "type": "range", "id": "padding_top", "label": "Üst boşluk", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "label": "Alt boşluk", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "color",
+      "name": "Renk",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Renk adı", "default": "Kırmızı" },
+        { "type": "color", "id": "color", "label": "Renk", "default": "#C8222C" },
+        { "type": "url", "id": "link", "label": "Bağlantı", "info": "Örn. o renkteki koleksiyon ya da renk filtresi uygulanmış sayfa." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Renge göre seç",
+      "blocks": [
+        { "type": "color", "settings": { "title": "Kırmızı", "color": "#C8222C" } },
+        { "type": "color", "settings": { "title": "Bordo", "color": "#8E1C2A" } },
+        { "type": "color", "settings": { "title": "Pembe", "color": "#E77FA0" } },
+        { "type": "color", "settings": { "title": "Mavi", "color": "#8DB8DC" } },
+        { "type": "color", "settings": { "title": "Kiremit", "color": "#C2603E" } },
+        { "type": "color", "settings": { "title": "Hardal", "color": "#D59A2A" } },
+        { "type": "color", "settings": { "title": "Lila", "color": "#A88BD0" } },
+        { "type": "color", "settings": { "title": "Beyaz", "color": "#F7F4EE" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

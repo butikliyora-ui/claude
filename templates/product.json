@@ -6,7 +6,7 @@
         "eyebrow": {
           "type": "text",
           "settings": {
-            "text": "El yapımı · Sipariş üzerine"
+            "text": "El yapımı · Örgü toka"
           }
         },
         "title": {
@@ -21,8 +21,8 @@
           "type": "handmade_info",
           "settings": {
             "title": "Tamamen el yapımı",
-            "text": "Her ürün tek tek örüldüğü için küçük farklılıklar olabilir; bu onu benzersiz yapar.",
-            "default_time": "3–7 iş günü"
+            "text": "Her toka tek tek örüldüğü için küçük farklılıklar olabilir; bu onu benzersiz yapar.",
+            "default_time": "1–3 iş günü"
           }
         },
         "variants": {
@@ -35,8 +35,8 @@
             "show_quantity": true,
             "show_dynamic_checkout": true,
             "show_note": true,
-            "note_label": "Özel isteğin",
-            "note_placeholder": "Örn: İsim işlemesi 'Defne', pembe tonlarında"
+            "note_label": "Renk / özel isteğin",
+            "note_placeholder": "Örn: Bordo-beyaz kombin, inci boncuklu"
           }
         },
         "wa": {
@@ -49,7 +49,7 @@
           "type": "perks",
           "settings": {
             "perk_1": "750 TL üzeri ücretsiz kargo",
-            "perk_2": "Ücretsiz hediye paketi",
+            "perk_2": "Kraft kartta, hediyeye hazır",
             "perk_3": "Güvenli ödeme"
           }
         },
@@ -61,8 +61,8 @@
           "type": "collapsible_tab",
           "settings": {
             "icon": "yarn",
-            "heading": "Malzeme ve ölçüler",
-            "content": "<p>Ürün açıklamasında belirtilen iplik ve ölçüler kullanılmıştır. Farklı ölçü için bize yazabilirsin.</p>",
+            "heading": "Malzeme ve ölçü",
+            "content": "<p>Pamuk örgü ipi, metal çıtçıt toka; modele göre inci boncuk ve el nakışı. Ölçü ürün açıklamasında yer alır.</p>",
             "open": false
           }
         },
@@ -70,8 +70,8 @@
           "type": "collapsible_tab",
           "settings": {
             "icon": "leaf",
-            "heading": "Bakım talimatı",
-            "content": "<ul><li>30°C'de elde veya hassas programda yıkayın</li><li>Sıkmadan, düz zeminde kurutun</li><li>Çamaşır suyu ve kurutma makinesi kullanmayın</li><li>Ütülemeyin</li></ul>",
+            "heading": "Bakım ve güvenlik",
+            "content": "<ul><li>Ilık suda, hafif sabunla elde yıkayın</li><li>Düz zeminde kurutun</li><li>Küçük parçalar içerir: 3 yaş altı çocuklar için uygun değildir</li></ul>",
             "open": false
           }
         },
@@ -123,31 +123,31 @@
           "settings": {
             "icon": "hand",
             "title": "%100 El yapımı",
-            "text": "Her ürün tek tek örülür"
+            "text": "Her toka tek tek örülür"
           }
         },
         "t2": {
           "type": "item",
           "settings": {
-            "icon": "leaf",
-            "title": "Kaliteli iplik",
-            "text": "Bebek dostu, yumuşak"
+            "icon": "sparkle",
+            "title": "Çift olarak",
+            "text": "Kraft kartta, hediyeye hazır"
           }
         },
         "t3": {
           "type": "item",
           "settings": {
-            "icon": "gift",
-            "title": "Hediye paketi",
-            "text": "Özenle paketlenir"
+            "icon": "heart",
+            "title": "Özel renk",
+            "text": "İstediğin renkte örüyoruz"
           }
         },
         "t4": {
           "type": "item",
           "settings": {
-            "icon": "shield",
-            "title": "Güvenli ödeme",
-            "text": "Kredi kartı / havale"
+            "icon": "box",
+            "title": "Toptan satış",
+            "text": "Butik ve mağazalara"
           }
         }
       },
