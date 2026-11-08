@@ -7,7 +7,7 @@
         "height": "medium",
         "overlay": 30,
         "align": "left",
-        "eyebrow": "El yapımı örgü tokalar & amigurumi",
+        "eyebrow": "Örgü | Tasarım · El yapımı",
         "heading": "Saçlarına ilmek ilmek renk kat",
         "text": "<p>Çilekli, kirazlı, papatyalı, nakışlı... Her toka tek tek, elde örülür ve kartında çift olarak gelir. Yanında amigurumi bebekler, kuzucuklar ve sevimli iğnelikler.</p>",
         "button_label": "Tokaları keşfet",
@@ -77,13 +77,13 @@
         "c2": {
           "type": "collection",
           "settings": {
-            "title": "Nakışlı Tokalar"
+            "title": "Çiçekli & Nakışlı"
           }
         },
         "c3": {
           "type": "collection",
           "settings": {
-            "title": "Salkım Tokalar"
+            "title": "Salkım & Taç"
           }
         },
         "c4": {
@@ -101,7 +101,7 @@
         "c6": {
           "type": "collection",
           "settings": {
-            "title": "İsimli Ürünler"
+            "title": "Anahtarlık & İsimli"
           }
         }
       },
@@ -218,7 +218,7 @@
       "type": "image-with-text",
       "settings": {
         "image_position": "left",
-        "badge": "Örgü & tasarım",
+        "badge": "Örgü | Tasarım",
         "eyebrow": "Hikayemiz",
         "heading": "Bir yumak, bir tığ ve bolca sevgi",
         "text": "<p>Merhaba, ben İlknur. Workshop'larda başlayan örgü tutkum bugün yüzlerce tokaya, amigurumi bebeklere ve sevimli iğneliklere dönüştü. Oğlum için ördüğüm Sonic'ten anneme hediye ettiğim iğneliğe kadar her parçada aynı özen var.</p><p>Tokalarımın her biri tek tek örülür; inciler ve nakışlar elde işlenir. Üretmenin verdiği hazzı seninle paylaşmak için buradayım.</p>",
@@ -337,7 +337,7 @@
         "w3": {
           "type": "point",
           "settings": {
-            "text": "Toptan toka, aksesuar ve amigurumi oyuncak; toplu siparişlere özel fiyat"
+            "text": "Toptan toka, taç, anahtarlık ve amigurumi; toplu siparişlere özel fiyat"
           }
         }
       },
