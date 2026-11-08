@@ -83,7 +83,7 @@
         "c3": {
           "type": "collection",
           "settings": {
-            "title": "Salkım & Taç"
+            "title": "Salkım, Taç & Bandana"
           }
         },
         "c4": {
@@ -101,13 +101,19 @@
         "c6": {
           "type": "collection",
           "settings": {
-            "title": "Anahtarlık & İsimli"
+            "title": "Anahtarlık"
           }
         },
         "c7": {
           "type": "collection",
           "settings": {
             "title": "Amigurumi Bebekler"
+          }
+        },
+        "c8": {
+          "type": "collection",
+          "settings": {
+            "title": "Bebek & Yeni Doğan"
           }
         }
       },
@@ -118,6 +124,7 @@
         "c4",
         "c5",
         "c7",
+        "c8",
         "c6"
       ],
       "settings": {
@@ -298,7 +305,7 @@
         "p2": {
           "type": "point",
           "settings": {
-            "text": "İsimli emzik zinciri ve anahtarlık"
+            "text": "İsimli emzik askısı, diş kaşıyıcı ve yeni doğan setleri"
           }
         },
         "p3": {
@@ -491,7 +498,7 @@
           "type": "question",
           "settings": {
             "question": "İsimli ürün yaptırabilir miyim?",
-            "answer": "<p>Evet. Emzik zinciri ve anahtarlıklarda istediğin ismi harf boncuklarla hazırlıyoruz. İsmi sipariş notuna yazman yeterli.</p>"
+            "answer": "<p>Evet. Emzik askısı ve anahtarlıklarda istediğin ismi harf boncuklarla hazırlıyoruz. İsmi sipariş notuna yazman yeterli.</p>"
           }
         },
         "q9": {
