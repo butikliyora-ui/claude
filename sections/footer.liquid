@@ -6,7 +6,7 @@
           {%- case block.type -%}
             {%- when 'brand' -%}
               <p class="site-footer__brand">
-                {{- 'logo-rozet.png' | asset_url | image_tag: class: 'site-footer__badge', width: 88, height: 88, alt: '', loading: 'lazy' -}}
+                <img src="{{ 'logo-rozet.png' | asset_url }}" class="site-footer__badge" width="88" height="88" alt="" loading="lazy">
                 {{ shop.name }}
               </p>
               {%- if block.settings.text != blank -%}

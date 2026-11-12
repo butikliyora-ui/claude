@@ -3,6 +3,8 @@
   - product: ürün (boşsa örnek kart gösterilir)
   - placeholder_title, placeholder_price, placeholder_index: örnek kart için
   - lazy: görseller tembel yüklensin mi (varsayılan true)
+  - color_handle: renk koleksiyonunun handle'ı (örn. kirmizi-tokalar). Verilirse
+    kart o rengin varyant fotoğrafını gösterir ve o varyanta bağlanır.
 {%- endcomment -%}
 {%- liquid
   assign ratio_class = 'ratio--' | append: settings.card_image_ratio
@@ -16,6 +18,42 @@
   {%- liquid
     assign first_image = product.featured_media
     assign second_image = product.media[1]
+    assign card_url = product.url
+    if color_handle != blank and product.has_only_default_variant == false
+      assign renkler = ''
+      case color_handle
+        when 'kirmizi-tokalar'
+          assign renkler = 'kırmızı'
+        when 'bordo-tokalar'
+          assign renkler = 'bordo'
+        when 'pembe-tokalar'
+          assign renkler = 'pembe,fuşya'
+        when 'mavi-tokalar'
+          assign renkler = 'mavi,turkuaz'
+        when 'yesil-tokalar'
+          assign renkler = 'yeşil'
+        when 'sari-tokalar'
+          assign renkler = 'sarı'
+        when 'kiremit-tokalar'
+          assign renkler = 'kiremit,karamel'
+        when 'mor-tokalar'
+          assign renkler = 'mor'
+        when 'beyaz-tokalar'
+          assign renkler = 'beyaz'
+      endcase
+      if renkler != ''
+        assign renk_list = renkler | split: ','
+        for v in product.variants
+          assign vt = v.title | downcase
+          if renk_list contains vt and v.featured_media
+            assign first_image = v.featured_media
+            assign second_image = nil
+            assign card_url = v.url
+            break
+          endif
+        endfor
+      endif
+    endif
     assign on_sale = false
     if product.compare_at_price > product.price
       assign on_sale = true
@@ -24,7 +62,7 @@
   -%}
   <div class="card{% if settings.card_show_secondary_image and second_image %} card--has-secondary{% endif %}">
     <div class="card__media-wrap">
-    <a href="{{ product.url }}" class="card__media {{ ratio_class }}"{% if settings.card_image_ratio == 'natural' and first_image %} style="--ratio: {{ first_image.aspect_ratio }}"{% endif %}>
+    <a href="{{ card_url }}" class="card__media {{ ratio_class }}"{% if settings.card_image_ratio == 'natural' and first_image %} style="--ratio: {{ first_image.aspect_ratio }}"{% endif %}>
       {%- if first_image -%}
         {{
           first_image
@@ -72,7 +110,7 @@
           </button>
         {%- endform -%}
       {%- else -%}
-        <a href="{{ product.url }}" class="card__quick-btn card__quick-btn--link" aria-label="{{ 'products.product.choose_options' | t }}: {{ product.title | escape }}">
+        <a href="{{ card_url }}" class="card__quick-btn card__quick-btn--link" aria-label="{{ 'products.product.choose_options' | t }}: {{ product.title | escape }}">
           {% render 'icon', name: 'arrow' %}<span>{{ 'products.product.choose_options' | t }}</span>
         </a>
       {%- endif -%}
@@ -80,7 +118,7 @@
     </div>
 
     <div class="card__info">
-      <h3 class="card__title"><a href="{{ product.url }}">{{ product.title | escape }}</a></h3>
+      <h3 class="card__title"><a href="{{ card_url }}">{{ product.title | escape }}</a></h3>
       {% render 'price', product: product %}
     </div>
 

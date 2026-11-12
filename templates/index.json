@@ -165,56 +165,72 @@
           "type": "color",
           "settings": {
             "title": "Kırmızı",
-            "color": "#C8222C"
+            "color": "#C8222C",
+            "link": "shopify://collections/kirmizi-tokalar"
           }
         },
         "k2": {
           "type": "color",
           "settings": {
             "title": "Bordo",
-            "color": "#8E1C2A"
+            "color": "#8E1C2A",
+            "link": "shopify://collections/bordo-tokalar"
           }
         },
         "k3": {
           "type": "color",
           "settings": {
             "title": "Pembe",
-            "color": "#E77FA0"
+            "color": "#E77FA0",
+            "link": "shopify://collections/pembe-tokalar"
           }
         },
         "k4": {
           "type": "color",
           "settings": {
             "title": "Mavi",
-            "color": "#8DB8DC"
+            "color": "#4FB3C4",
+            "link": "shopify://collections/mavi-tokalar"
           }
         },
         "k5": {
           "type": "color",
           "settings": {
-            "title": "Kiremit",
-            "color": "#C2603E"
+            "title": "Yeşil",
+            "color": "#7DBA6A",
+            "link": "shopify://collections/yesil-tokalar"
           }
         },
         "k6": {
           "type": "color",
           "settings": {
-            "title": "Hardal",
-            "color": "#D59A2A"
+            "title": "Sarı",
+            "color": "#E9B824",
+            "link": "shopify://collections/sari-tokalar"
           }
         },
         "k7": {
           "type": "color",
           "settings": {
-            "title": "Lila",
-            "color": "#A88BD0"
+            "title": "Kiremit",
+            "color": "#C2603E",
+            "link": "shopify://collections/kiremit-tokalar"
           }
         },
         "k8": {
           "type": "color",
           "settings": {
+            "title": "Mor",
+            "color": "#8E5BC7",
+            "link": "shopify://collections/mor-tokalar"
+          }
+        },
+        "k9": {
+          "type": "color",
+          "settings": {
             "title": "Beyaz",
-            "color": "#F7F4EE"
+            "color": "#F7F4EE",
+            "link": "shopify://collections/beyaz-tokalar"
           }
         }
       },
@@ -226,7 +242,8 @@
         "k5",
         "k6",
         "k7",
-        "k8"
+        "k8",
+        "k9"
       ],
       "settings": {
         "eyebrow": "Bugünün rengi ne?",

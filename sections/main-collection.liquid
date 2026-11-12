@@ -121,7 +121,7 @@
                 assign lazy = false
               endif
             -%}
-            <li>{% render 'product-card', product: product, lazy: lazy %}</li>
+            <li>{% render 'product-card', product: product, lazy: lazy, color_handle: collection.handle %}</li>
           {%- endfor -%}
         </ul>
         {% render 'pagination', paginate: paginate %}
