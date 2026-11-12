@@ -71,49 +71,57 @@
         "c1": {
           "type": "collection",
           "settings": {
-            "title": "Meyveli Tokalar"
+            "title": "Meyveli Tokalar",
+            "collection": "meyveli-tokalar"
           }
         },
         "c2": {
           "type": "collection",
           "settings": {
-            "title": "Çiçekli & Nakışlı"
+            "title": "Çiçekli & Nakışlı",
+            "collection": "cicekli-nakisli-tokalar"
           }
         },
         "c3": {
           "type": "collection",
           "settings": {
-            "title": "Salkım, Taç & Bandana"
+            "title": "Salkım, Taç & Bandana",
+            "collection": "salkim-tac-bandana"
           }
         },
         "c4": {
           "type": "collection",
           "settings": {
-            "title": "Fiyonk & Kelebek"
+            "title": "Fiyonk & Kelebek",
+            "collection": "fiyonk-kelebek"
           }
         },
         "c5": {
           "type": "collection",
           "settings": {
-            "title": "Amigurumi Kuşlar"
+            "title": "Amigurumi Kuşlar",
+            "collection": "amigurumi-kuslar"
           }
         },
         "c6": {
           "type": "collection",
           "settings": {
-            "title": "Anahtarlık"
+            "title": "Anahtarlık",
+            "collection": "anahtarlik"
           }
         },
         "c7": {
           "type": "collection",
           "settings": {
-            "title": "Amigurumi Bebekler"
+            "title": "Amigurumi Bebekler",
+            "collection": "amigurumi-bebekler"
           }
         },
         "c8": {
           "type": "collection",
           "settings": {
-            "title": "Bebek & Yeni Doğan"
+            "title": "Bebek & Yeni Doğan",
+            "collection": "bebek-yeni-dogan"
           }
         }
       },
@@ -146,7 +154,8 @@
         "show_view_all": true,
         "tinted": false,
         "padding_top": 48,
-        "padding_bottom": 64
+        "padding_bottom": 64,
+        "collection": "cicekli-nakisli-tokalar"
       }
     },
     "colors": {
@@ -542,13 +551,14 @@
       "type": "featured-collection",
       "settings": {
         "eyebrow": "El emeği göz nuru",
-        "heading": "Amigurumi Kuşlar & Anahtarlıklar",
+        "heading": "Amigurumi Kuşlar",
         "products_to_show": 8,
         "columns": 4,
         "show_view_all": true,
         "tinted": true,
         "padding_top": 64,
-        "padding_bottom": 64
+        "padding_bottom": 64,
+        "collection": "amigurumi-kuslar"
       }
     }
   },
