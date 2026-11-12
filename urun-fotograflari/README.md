@@ -2,8 +2,7 @@
 
 Her klasör bir kategori, her dosya `urun-adi-sıra.jpg` biçiminde. `-1` ürünün kapak fotoğrafıdır.
 
-Bir fotoğrafı değiştirmek için: Shopify'da **Ürünler → ürün → Medya** kısmından eskisini silip yenisini yükle. Dosya adının aynı kalması gerekmez.
-
+Bir fotoğrafı değiştirmek için: Shopify'da **Ürünler → ürün → Medya** kısmından eskisini silip yenisini yükle.
 
 ## Meyveli Tokalar · `1-meyveli-tokalar/`
 
@@ -97,3 +96,32 @@ Bir fotoğrafı değiştirmek için: Shopify'da **Ürünler → ürün → Medya
 |---|---|
 | Fincan İğnelik | `fincan-ignelik-1.jpg`, `fincan-ignelik-2.jpg`, `fincan-ignelik-3.jpg` |
 | Kaktüs İğnelik | `kaktus-ignelik-1.jpg` |
+
+## Karakterler · `10-karakterler/`
+
+| Ürün | Fotoğraflar |
+|---|---|
+| Sonic | `sonic-1.jpg`, `sonic-2.jpg`, `sonic-3.jpg` |
+| Stitch | `stitch-1.jpg`, `stitch-2.jpg`, `stitch-3.jpg`, `stitch-4.jpg` |
+| Stitch Anahtarlık | `stitch-anahtarlik-1.jpg`, `stitch-anahtarlik-2.jpg` |
+| Angel Anahtarlık | `angel-anahtarlik-1.jpg` |
+| Minion Anahtarlık | `minion-anahtarlik-1.jpg`, `minion-anahtarlik-2.jpg`, `minion-anahtarlik-3.jpg`, `minion-anahtarlik-4.jpg`, `minion-anahtarlik-5.jpg`, `minion-anahtarlik-6.jpg`, `minion-anahtarlik-7.jpg` |
+| Minnie Toka | `minnie-toka-1.jpg`, `minnie-toka-2.jpg`, `minnie-toka-3.jpg` |
+| Wednesday Bebek | `wednesday-bebek-1.jpg`, `wednesday-bebek-2.jpg` |
+| Wonder Woman | `wonder-woman-1.jpg` |
+| Batman | `batman-1.jpg` |
+| Superman | `superman-1.jpg` |
+| Flash | `flash-1.jpg` |
+| Örümcek Adam | `orumcek-adam-1.jpg` |
+| Güç Koruyucuları | `guc-koruyuculari-1.jpg` |
+| Üzüntü Bebek | `uzuntu-bebek-1.jpg`, `uzuntu-bebek-2.jpg` |
+| Sid Çanta Süsü | `sid-canta-susu-1.jpg` |
+| Minecraft Steve & Zombi | `minecraft-1.jpg` |
+| Snoopy Anahtarlık | `snoopy-anahtarlik-1.jpg`, `snoopy-anahtarlik-2.jpg` |
+| Sünger Bob Anahtarlık | `sunger-bob-anahtarlik-1.jpg` |
+| Pikachu Anahtarlık | `pikachu-anahtarlik-1.jpg` |
+| K-Pop Bebekler | `k-pop-bebekler-1.jpg`, `k-pop-bebekler-2.jpg`, `k-pop-bebekler-3.jpg` |
+| Bluey | `bluey-1.jpg` |
+| Yoda Diş Kaşıyıcı | `yoda-dis-kasiyici-1.jpg` |
+| Çilek Kız Anahtarlık | `cilek-kiz-anahtarlik-1.jpg` |
+| Tavuk Kova | `tavuk-kova-1.jpg` |
