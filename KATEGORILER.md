@@ -48,6 +48,9 @@ Fındık Kız bebekler · Burçak bebek · Lina bebek · Çilek kız anahtarlık
 ## 8. Anahtarlık · `anahtarlik`
 Kalp anahtarlık · Zürafa anahtarlık · Kardan adam anahtarlık · İsimli boncuk anahtarlık
 
+## 9. İğnelik · `ignelik`
+Fincan iğnelik · Kaktüs iğnelik
+
 ## Özel koleksiyonlar
 - **Kişiye Özel Sipariş:** renk, isim ve karakter istekleri; WhatsApp'a yönlendirir
 - **Toptan Satış:** butik ve mağazalar için kartlı toka, anahtarlık, amigurumi
