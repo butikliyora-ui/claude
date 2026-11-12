@@ -102,7 +102,7 @@ Bir fotoğrafı değiştirmek için: Shopify'da **Ürünler → ürün → Medya
 | Ürün | Fotoğraflar |
 |---|---|
 | Sonic | `sonic-1.jpg`, `sonic-2.jpg`, `sonic-3.jpg` |
-| Stitch | `stitch-1.jpg`, `stitch-2.jpg`, `stitch-3.jpg`, `stitch-4.jpg` |
+| Stitch | `stitch-1.jpg`, `stitch-2.jpg`, `stitch-3.jpg`, `stitch-4.jpg`, `stitch-5.jpg` |
 | Stitch Anahtarlık | `stitch-anahtarlik-1.jpg`, `stitch-anahtarlik-2.jpg` |
 | Angel Anahtarlık | `angel-anahtarlik-1.jpg` |
 | Minion Anahtarlık | `minion-anahtarlik-1.jpg`, `minion-anahtarlik-2.jpg`, `minion-anahtarlik-3.jpg`, `minion-anahtarlik-4.jpg`, `minion-anahtarlik-5.jpg`, `minion-anahtarlik-6.jpg`, `minion-anahtarlik-7.jpg` |
